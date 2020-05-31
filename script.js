@@ -124,7 +124,7 @@ function showGetCubie() {
     checklist.style.display = 'none';
     timenow = Date.now();
      if (nextEndtime < timenow) {
-        document.querySelector('.before-message').textContent = 'Your Cubie is waiting for you';
+        // document.querySelector('.before-message').textContent = 'Your Cubie is waiting for you';
         document.querySelector('.before-get').style.display = 'block';
         console.log(document.querySelector('div.before-get'));
        document.querySelector('.after-get').style.display = 'none';
