@@ -37,18 +37,18 @@ if (nextEndtime > timenow) { // endtime지났으면 초기화 상태로 유지
     }
 }
 
-//test용 초기화하기
-// let btnInit = document.querySelector('.btn-init');
-// btnInit.onclick = initStorage;
+// test용 초기화하기
+let btnInit = document.querySelector('.btn-init');
+btnInit.onclick = initStorage;
 
-// function initStorage() {
-//     console.log('Storage daily, downloaded,tempImg will be removed')
+function initStorage() {
+    console.log('Storage daily, downloaded,tempImg will be removed')
  
-//         localStorage.removeItem('nextEndtime');
-//         localStorage.removeItem('downloaded');
-//         localStorage.removeItem('tempImg');
+        localStorage.removeItem('nextEndtime');
+        localStorage.removeItem('downloaded');
+        localStorage.removeItem('tempImg');
    
-// }
+}
 
 //Checklist 만들기
 let targetList = document.querySelector('div.card-list');
@@ -122,7 +122,17 @@ function showGetCubie() {
     aboutUs.style.display = 'none';
     getCubie.style.display = 'block';
     checklist.style.display = 'none';
-    document.querySelector('.remaining-time').textContent = getTimeRemaining(nextEndtime);
+    timenow = Date.now();
+     if (nextEndtime < timenow) {
+        document.querySelector('.before-message').textContent = 'Your Cubie is waiting for you';
+        document.querySelector('.before-get').style.display = 'block';
+        console.log(document.querySelector('div.before-get'));
+       document.querySelector('.after-get').style.display = 'none';
+    }else {
+        document.querySelector('.remaining-time').textContent = getTimeRemaining(nextEndtime);
+   
+  }
+    
 }
 
 //story 창 close 버튼 모든 cubie에 붙이기
@@ -260,7 +270,7 @@ function getTimeRemaining(endtime) {
 
 //Daily random cubie 뽑기, 다운로드 받기, 몇번 받았는지 몇시간 남았는지 시간 계산하기
 let getCubieBtn = document.querySelector('.btn-lucky');
-console.log('show my lucky cubie');
+console.log('Show my Lucky Cubie');
 console.log(getCubieBtn);
 getCubieBtn.onclick = getRandomCubie;
 
@@ -277,10 +287,9 @@ function getRandomCubie() {
     console.log(randomCubies);
     let randomCubie = randomCubies[Math.floor(Math.random() * randomCubies.length)];
     console.log(randomCubie);
-    // let chanceNum = this.classList[1].slice(-1);
-    // console.log(chanceNum);
+   
     let dailyChance = document.querySelector('div.daily-chance');
-    console.log('dailyChance', dailyChance);
+    // console.log('dailyChance', dailyChance);
     let afterGet = dailyChance.querySelector('div.after-get');
     // console.log('after-get', afterGet);
     let beforeGet = dailyChance.querySelector('div.before-get');
@@ -300,9 +309,9 @@ function getRandomCubie() {
     myStorage.setItem('tempName', randomCubie);
     tempName = randomCubie;
     // console.log('chancenum', chanceNum);
-
-    myStorage.setItem('nextEndtime', timenow + (0.1 * 1000 * 60 * 60));
-    nextEndtime = timenow + (0.1 * 1000 * 60 * 60);
+//test time set-up  나중에 6시간으로 바뀌어야 함. 0.02시간
+    myStorage.setItem('nextEndtime', timenow + (2 * 1000 * 60 * 60));
+    nextEndtime = timenow + (2 * 1000 * 60 * 60);
     // console.log('endtime calculate', daily[chanceNum]);
     let remainingTime = dailyChance.querySelector('div.remaining-time');
     // console.log('remainingTime',remainingTime);

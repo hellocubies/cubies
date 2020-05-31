@@ -117,7 +117,37 @@ var data = [{
     "cubie-img": "Iuy56",
     "cubie-template": "9vfGh",
     "cubie-story-content": "Brave and courageous, Kade is the perfect Knight Cubie. With a huge sense of justice, Kade will always do his best to right any wrongs he sees. If you’re ever in need of help, call on him. He will do his best to help, which isn't always perfect, he makes mistakes too. "
+},
+{
+    "cubie-name": "Diana",
+    "cubie-rarity": "Common",
+    "cubie-species": "Dog",
+    "cubie-img": "jkEp2",
+    "cubie-template": "24Bvc",
+    "cubie-story-content": "The dog counterpart of Cat Cubies, Diana the Dog Cubie is fiercely loyal and courageous with scary good hearing. If you ever need someone on your side during an argument or a fight, just call Diana. She will side with you until the very end with extremely good persuasive skills."
+},
+{
+    "cubie-name": "Oishii",
+    "cubie-rarity": "Common",
+    "cubie-species": "Ramen",
+    "cubie-img": "Ivc31",
+    "cubie-template": "Oqf86",
+    "cubie-story-content": "Originating from Japan, Oishii was the first ever Ramen Cubie. However, later in life, he immigrated over to places and helped their people make their own  ramen. He spread the word for ramen and is making it more popular each day.  Now traveling around the world, he is the one to find if you ever need help making a ramen."
+},
+{
+    "cubie-name": "Preston",
+    "cubie-rarity": "Epic",
+    "cubie-species": "Pufferfish",
+    "cubie-img": "sd76T",
+    "cubie-template": "bn21K",
+    "cubie-story-content": "Found only in the deep dark waters of the Atlantic Ocean, Preston the Pufferfish Cubie is known for his gloomy attitude and his love for darkness. Easily frightened, he will puff himself up in defense should anyone ever approach him without letting him know in advance. So be careful when you go scuba diving; you might just accidentally find yourself pierced with spikes."
+},
+{
+    "cubie-name": "Camillia",
+    "cubie-rarity": "Rare",
+    "cubie-species": "Computer",
+    "cubie-img": "40Ubv",
+    "cubie-template": "4vcf3",
+    "cubie-story-content": "The smartest Cubie in the world, Camillia the Computer Cubie is known for high IQ. With her lightning fast math skills and a talent for languages, Camillia is the perfect math and language teacher. If you’re ever stuck doing your homework, call Camillia. She will help you to the best of her abilities."
 }
-
-
 ];
