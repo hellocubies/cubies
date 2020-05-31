@@ -350,3 +350,20 @@ function tempDown() {
     window.open('images/' + tempImg + '.png');
 
 }
+
+let helpIcon = document.getElementById('help-icon');
+let helpSection = document.getElementById('help-section');
+let helpClose = document.getElementById('help-close');
+
+helpIcon.onclick = openHelp;
+helpClose.onclick = closeHelp;
+
+function openHelp(){
+    helpIcon.style.display = 'none';
+    helpSection.style.display = 'block';
+}
+
+function closeHelp(){
+    helpSection.style.display = 'none';
+    helpIcon.style.display = 'block';
+}
