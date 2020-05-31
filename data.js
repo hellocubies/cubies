@@ -149,5 +149,45 @@ var data = [{
     "cubie-img": "40Ubv",
     "cubie-template": "4vcf3",
     "cubie-story-content": "The smartest Cubie in the world, Camillia the Computer Cubie is known for high IQ. With her lightning fast math skills and a talent for languages, Camillia is the perfect math and language teacher. If you’re ever stuck doing your homework, call Camillia. She will help you to the best of her abilities."
+},
+{
+    "cubie-name": "Philip",
+    "cubie-rarity": "Common",
+    "cubie-species": "Pig",
+    "cubie-img": "Xc83s",
+    "cubie-template": "O90ds",
+    "cubie-story-content": "A lover of mud and food, Philip the Pig Cubie can usually be found in a mud patch in a farm somewhere. His favorite activity besides eating is playing hide-and-seek by covering himself with mud. Very social and outgoing, Philip has tons of friends, from foods, animals, to objects."
+},
+{
+    "cubie-name": "Bryce",
+    "cubie-rarity": "Epic",
+    "cubie-species": "Burger",
+    "cubie-img": "jU1nM",
+    "cubie-template": "K530s",
+    "cubie-story-content": "The first ever Burger Cubie, Bryce is known for his delicious taste and scent. Made from the most expensive ingredients, Bryce may just be the most exotic Burger Cubie to ever exist. After his birth in a fast food restaurant, Bryce visits different fast food restaurants, improving their ratings and taste"
+},
+{
+    "cubie-name": "Flora",
+    "cubie-rarity": "Epic",
+    "cubie-species": "Flower Angel",
+    "cubie-img": "Hhv32",
+    "cubie-template": "9Zxal",
+    "cubie-story-content": "Innocent and beautiful, Flora fits her name perfectly as a Flower Angel Cubie. With an amazing green thumb, any plant that Flora touches will flourish. In fact, she can even bring back dead plants back to life! Her powers work the best on flowers, though, just like her name."
+},
+{
+    "cubie-name": "Brett",
+    "cubie-rarity": "Rare",
+    "cubie-species": "Bat",
+    "cubie-img": "Wec0o",
+    "cubie-template": "Pza23",
+    "cubie-story-content": "As a nocturnal creature, Brett the Bat Cubie never emerges from his dark cave until sunset, and even then, he only comes outside to hunt. As a result, he doesn’t have a lot of friends, and even some who try to get close are shunned quickly by his gruff attitude. But as a big softie at heart, Brett is immensely kind to those he is close to. If you ever want to win over his heart, just talk about cute figurines. He’ll show his friendly side."
+},
+{
+    "cubie-name": "Alex",
+    "cubie-rarity": "Rare",
+    "cubie-species": "Alien",
+    "cubie-img": "bGd75",
+    "cubie-template": "Sw9Il",
+    "cubie-story-content": "Originating from a star a million light years away from Earth, Alex the Alien Cubie crash landed on Earth when his spaceship broke down while he was traveling to a fellow star. For the first few decades, he tried his best to fix his spaceship and go back home, but that proved fruitless when the spaceship exploded while he was fixing it. Ever since then, he has been enjoying life on Earth, hoping that one day, he would be able to go back home. "
 }
 ];
