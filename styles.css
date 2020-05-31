@@ -255,7 +255,7 @@ button {
 }
 .after-desc{
   width : 280px;
-  height : 200px;
+  height : 220px;
   display : inline-block;
   vertical-align : middle; 
   background-color: #81f5ff;
@@ -289,6 +289,10 @@ button {
   font-size : 18px;
 }
 
+.time-refresh{
+  padding : 5px;
+  font-size : 24px;
+}
 .card-list {
   position: relative;
   margin: auto;

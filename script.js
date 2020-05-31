@@ -43,11 +43,11 @@ btnInit.onclick = initStorage;
 
 function initStorage() {
     console.log('Storage daily, downloaded,tempImg will be removed')
- 
-        localStorage.removeItem('nextEndtime');
-        localStorage.removeItem('downloaded');
-        localStorage.removeItem('tempImg');
-   
+
+    localStorage.removeItem('nextEndtime');
+    localStorage.removeItem('downloaded');
+    localStorage.removeItem('tempImg');
+
 }
 
 //Checklist 만들기
@@ -123,16 +123,16 @@ function showGetCubie() {
     getCubie.style.display = 'block';
     checklist.style.display = 'none';
     timenow = Date.now();
-     if (nextEndtime < timenow) {
+    if (nextEndtime < timenow) {
         // document.querySelector('.before-message').textContent = 'Your Cubie is waiting for you';
         document.querySelector('.before-get').style.display = 'block';
         console.log(document.querySelector('div.before-get'));
-       document.querySelector('.after-get').style.display = 'none';
-    }else {
+        document.querySelector('.after-get').style.display = 'none';
+    } else {
         document.querySelector('.remaining-time').textContent = getTimeRemaining(nextEndtime);
-   
-  }
-    
+
+    }
+
 }
 
 //story 창 close 버튼 모든 cubie에 붙이기
@@ -222,10 +222,11 @@ function storyOpen() {
 //getcubie누른 후에는 template과 다운로드 버튼, 다운로드 한 후에는 다시 물음표와 몇시간 후에 니 튜비 나온다는걸로 변경
 createDailyCubie(Number(nextEndtime));
 console.log('downloaded', downloaded)
+
 function createDailyCubie(endstamp) {
     let temp = document.querySelector('#daily-temp');
     let newDaily = document.importNode(temp.content, true);
-   console.log('endtime, timenow', endstamp, timenow);
+    console.log('endtime, timenow', endstamp, timenow);
     if (endstamp < timenow) {
         // newDaily.querySelector('div.before-message').textContent = 'Your Cubie is waiting for you';
         newDaily.querySelector('div.before-get').style.display = 'block';
@@ -236,7 +237,7 @@ function createDailyCubie(endstamp) {
         newDaily.querySelector('div.lucky-template').style.backgroundImage = 'url("images/' + tempImg + '.png")';
         newDaily.querySelector('h2.lucky-title').textContent = 'You got ' + tempName + '!';
         if (downloaded === '1') {
-            
+
             newDaily.querySelector('div.download-bar').style.display = 'none';
             console.log(newDaily.querySelector('div.download-bar'));
             console.log(newDaily.querySelector('div.download-bar').style.display);
@@ -248,7 +249,7 @@ function createDailyCubie(endstamp) {
             newDaily.querySelector('div.after-message').textContent = 'Click download button and save the image';
             newDaily.querySelector('div.remaining-time').textContent = getTimeRemaining(endstamp);
         }
-        
+
 
     }
     // targetDaily.insertBefore(newDaily, targetDaily.childNodes[0]);
@@ -287,7 +288,7 @@ function getRandomCubie() {
     console.log(randomCubies);
     let randomCubie = randomCubies[Math.floor(Math.random() * randomCubies.length)];
     console.log(randomCubie);
-   
+
     let dailyChance = document.querySelector('div.daily-chance');
     // console.log('dailyChance', dailyChance);
     let afterGet = dailyChance.querySelector('div.after-get');
@@ -302,14 +303,14 @@ function getRandomCubie() {
     console.log(templates[randomCubie][0]);
 
     cubieTemplate.style.backgroundImage = 'url("images/' + templates[randomCubie][0] + '.png")';
-    
+
     myStorage.setItem('downloaded', 0);
     myStorage.setItem('tempImg', templates[randomCubie][0]);
     tempImg = templates[randomCubie][0];
     myStorage.setItem('tempName', randomCubie);
     tempName = randomCubie;
     // console.log('chancenum', chanceNum);
-//test time set-up  나중에 6시간으로 바뀌어야 함. 0.02시간
+    //test time set-up  나중에 6시간으로 바뀌어야 함. 0.02시간
     myStorage.setItem('nextEndtime', timenow + (2 * 1000 * 60 * 60));
     nextEndtime = timenow + (2 * 1000 * 60 * 60);
     // console.log('endtime calculate', daily[chanceNum]);
@@ -325,7 +326,7 @@ function getRandomCubie() {
 let downloadBtn = document.querySelector('.btn-download');
 
 
-    downloadBtn.onclick = tempDown;
+downloadBtn.onclick = tempDown;
 
 
 function tempDown() {
@@ -344,7 +345,7 @@ function tempDown() {
     // }
     this.style.display = 'none';
     document.querySelector('div.after-message').textContent = 'Are you enjoying the time with your ' + tempName + '?';
-            
+
     myStorage.setItem('downloaded', 1);
     downloaded = 1;
     window.open('images/' + tempImg + '.png');
@@ -358,12 +359,27 @@ let helpClose = document.getElementById('help-close');
 helpIcon.onclick = openHelp;
 helpClose.onclick = closeHelp;
 
-function openHelp(){
+function openHelp() {
     helpIcon.style.display = 'none';
     helpSection.style.display = 'block';
 }
 
-function closeHelp(){
+function closeHelp() {
     helpSection.style.display = 'none';
     helpIcon.style.display = 'block';
+}
+
+let timeRefresh = document.querySelector('div.time-refresh');
+timeRefresh.onclick = refreshTime;
+function refreshTime() {
+    timenow = Date.now();
+    if (nextEndtime < timenow) {
+        // document.querySelector('.before-message').textContent = 'Your Cubie is waiting for you';
+        document.querySelector('.before-get').style.display = 'block';
+        console.log(document.querySelector('div.before-get'));
+        document.querySelector('.after-get').style.display = 'none';
+    } else {
+        document.querySelector('.remaining-time').textContent = getTimeRemaining(nextEndtime);
+
+    }
 }
