@@ -319,6 +319,16 @@ button {
   height: 100px;
   border-radius: 20px;
 }
+.cubie-img-big {
+  display: none;
+  position : absolute;
+  left : 10px;
+  top : 10px;
+  width: 280px;
+  height: 280px;
+  border-radius: 20px;
+  z-index : 2;
+}
 
 .thumb-content {
   display: inline-block;

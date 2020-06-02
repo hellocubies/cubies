@@ -330,8 +330,7 @@ downloadBtn.onclick = tempDown;
 
 
 function tempDown() {
-    // console.log(this);
-    // console.log('Here we are!');
+    
     // if (dnNum !== null) {
     //     dnNum++;
     // } else {
@@ -382,4 +381,26 @@ function refreshTime() {
         document.querySelector('.remaining-time').textContent = getTimeRemaining(nextEndtime);
 
     }
+}
+
+let cubieImgs = document.getElementsByClassName('cubie-img');
+let cubieImgBigs = document.getElementsByClassName('cubie-img-big');
+
+for (let i = 0; i < cubieImgs.length; i++) {
+    cubieImgs[i].onclick = imgPop;
+    cubieImgBigs[i].onclick = closeThis;
+}
+
+function imgPop(){
+    console.log('this',this);
+    let parentImg = this.parentNode;
+    console.log('parentImg',parentImg);
+    let cubieImgBig = parentImg.getElementsByClassName('cubie-img-big')[0];
+    console.log('bigimg',cubieImgBig);
+    cubieImgBig.src = this.src;
+    cubieImgBig.style.display = 'block';
+}
+
+function closeThis(){
+    this.style.display = 'none';
 }

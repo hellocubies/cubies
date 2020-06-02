@@ -96,7 +96,7 @@ var data = [{
 },
 {
     "cubie-name": "Trinity",
-    "cubie-rarity": "Common",
+    "cubie-rarity": "Epic",
     "cubie-species": "Turtle",
     "cubie-img": "Nzcd72",
     "cubie-template": "9kdm4",
@@ -128,7 +128,7 @@ var data = [{
 },
 {
     "cubie-name": "Oishii",
-    "cubie-rarity": "Common",
+    "cubie-rarity": "Epic",
     "cubie-species": "Ramen",
     "cubie-img": "Ivc31",
     "cubie-template": "Oqf86",
@@ -160,7 +160,7 @@ var data = [{
 },
 {
     "cubie-name": "Bryce",
-    "cubie-rarity": "Epic",
+    "cubie-rarity": "Commo",
     "cubie-species": "Burger",
     "cubie-img": "jU1nM",
     "cubie-template": "K530s",
