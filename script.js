@@ -42,7 +42,7 @@ let btnInit = document.querySelector('.btn-init');
 btnInit.onclick = initStorage;
 
 function initStorage() {
-    console.log('Storage daily, downloaded,tempImg will be removed')
+    // console.log('Storage daily, downloaded,tempImg will be removed')
 
     localStorage.removeItem('nextEndtime');
     localStorage.removeItem('downloaded');
@@ -126,7 +126,7 @@ function showGetCubie() {
     if (nextEndtime < timenow) {
         // document.querySelector('.before-message').textContent = 'Your Cubie is waiting for you';
         document.querySelector('.before-get').style.display = 'block';
-        console.log(document.querySelector('div.before-get'));
+        // console.log(document.querySelector('div.before-get'));
         document.querySelector('.after-get').style.display = 'none';
     } else {
         document.querySelector('.remaining-time').textContent = getTimeRemaining(nextEndtime);
@@ -221,12 +221,12 @@ function storyOpen() {
 
 //getcubie누른 후에는 template과 다운로드 버튼, 다운로드 한 후에는 다시 물음표와 몇시간 후에 니 튜비 나온다는걸로 변경
 createDailyCubie(Number(nextEndtime));
-console.log('downloaded', downloaded)
+// console.log('downloaded', downloaded)
 
 function createDailyCubie(endstamp) {
     let temp = document.querySelector('#daily-temp');
     let newDaily = document.importNode(temp.content, true);
-    console.log('endtime, timenow', endstamp, timenow);
+    // console.log('endtime, timenow', endstamp, timenow);
     if (endstamp < timenow) {
         // newDaily.querySelector('div.before-message').textContent = 'Your Cubie is waiting for you';
         newDaily.querySelector('div.before-get').style.display = 'block';
@@ -239,13 +239,13 @@ function createDailyCubie(endstamp) {
         if (downloaded === '1') {
 
             newDaily.querySelector('div.download-bar').style.display = 'none';
-            console.log(newDaily.querySelector('div.download-bar'));
-            console.log(newDaily.querySelector('div.download-bar').style.display);
+            // console.log(newDaily.querySelector('div.download-bar'));
+            // console.log(newDaily.querySelector('div.download-bar').style.display);
             newDaily.querySelector('div.after-message').textContent = 'Are you enjoying the time with your ' + tempName + '?';
             newDaily.querySelector('div.remaining-time').textContent = getTimeRemaining(endstamp);
         } else if (downloaded === '0') {
             newDaily.querySelector('div.download-bar').style.display = 'block';
-            console.log('tempImg : ' + tempImg);
+            // console.log('tempImg : ' + tempImg);
             newDaily.querySelector('div.after-message').textContent = 'Click download button and save the image';
             newDaily.querySelector('div.remaining-time').textContent = getTimeRemaining(endstamp);
         }
@@ -271,8 +271,8 @@ function getTimeRemaining(endtime) {
 
 //Daily random cubie 뽑기, 다운로드 받기, 몇번 받았는지 몇시간 남았는지 시간 계산하기
 let getCubieBtn = document.querySelector('.btn-lucky');
-console.log('Show my Lucky Cubie');
-console.log(getCubieBtn);
+// console.log('Show my Lucky Cubie');
+// console.log(getCubieBtn);
 getCubieBtn.onclick = getRandomCubie;
 
 
@@ -285,9 +285,9 @@ function getRandomCubie() {
             randomCubies.push(key);
         }
     }
-    console.log(randomCubies);
+    // console.log(randomCubies);
     let randomCubie = randomCubies[Math.floor(Math.random() * randomCubies.length)];
-    console.log(randomCubie);
+    // console.log(randomCubie);
 
     let dailyChance = document.querySelector('div.daily-chance');
     // console.log('dailyChance', dailyChance);
@@ -299,8 +299,8 @@ function getRandomCubie() {
     let cubieTemplate = dailyChance.querySelector('div.lucky-template');
     let luckyTitle = dailyChance.querySelector('h2.lucky-title');
     luckyTitle.textContent = 'You got ' + randomCubie + '!';
-    console.log('luckyTitle', luckyTitle);
-    console.log(templates[randomCubie][0]);
+    // console.log('luckyTitle', luckyTitle);
+    // console.log(templates[randomCubie][0]);
 
     cubieTemplate.style.backgroundImage = 'url("images/' + templates[randomCubie][0] + '.png")';
 
@@ -375,7 +375,7 @@ function refreshTime() {
     if (nextEndtime < timenow) {
         // document.querySelector('.before-message').textContent = 'Your Cubie is waiting for you';
         document.querySelector('.before-get').style.display = 'block';
-        console.log(document.querySelector('div.before-get'));
+        // console.log(document.querySelector('div.before-get'));
         document.querySelector('.after-get').style.display = 'none';
     } else {
         document.querySelector('.remaining-time').textContent = getTimeRemaining(nextEndtime);
@@ -392,11 +392,11 @@ for (let i = 0; i < cubieImgs.length; i++) {
 }
 
 function imgPop(){
-    console.log('this',this);
+    // console.log('this',this);
     let parentImg = this.parentNode;
-    console.log('parentImg',parentImg);
+    // console.log('parentImg',parentImg);
     let cubieImgBig = parentImg.getElementsByClassName('cubie-img-big')[0];
-    console.log('bigimg',cubieImgBig);
+    // console.log('bigimg',cubieImgBig);
     cubieImgBig.src = this.src;
     cubieImgBig.style.display = 'block';
 }
