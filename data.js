@@ -160,7 +160,7 @@ var data = [{
 },
 {
     "cubie-name": "Bryce",
-    "cubie-rarity": "Commo",
+    "cubie-rarity": "Common",
     "cubie-species": "Burger",
     "cubie-img": "jU1nM",
     "cubie-template": "K530s",
@@ -189,5 +189,103 @@ var data = [{
     "cubie-img": "bGd75",
     "cubie-template": "Sw9Il",
     "cubie-story-content": "Originating from a star a million light years away from Earth, Alex the Alien Cubie crash landed on Earth when his spaceship broke down while he was traveling to a fellow star. For the first few decades, he tried his best to fix his spaceship and go back home, but that proved fruitless when the spaceship exploded while he was fixing it. Ever since then, he has been enjoying life on Earth, hoping that one day, he would be able to go back home. "
+},
+{
+    "cubie-name": "Phoebe",
+    "cubie-rarity": "Epic",
+    "cubie-species": "Piñata",
+    "cubie-img": "Aav82",
+    "cubie-template": "O00Xz",
+    "cubie-story-content": "Known for her fun-loving personality, Phoebe the Piñata Cubie can usually be found in a party, having the time of her life. Originating from Mexico, Phoebe first decided to become a piñata because of her love for sweets. During the 14th century, though, she decided that the rest of the world should enjoy piñatas too, and crossed over to Europe. Since then, piñatas have been found all over the world, and became a symbol of parties."
+},
+{
+    "cubie-name": "Dylan",
+    "cubie-rarity": "Epic",
+    "cubie-species": "Double Faced",
+    "cubie-img": "Tyv72",
+    "cubie-template": "Cx20O",
+    "cubie-story-content": "When you think of theaters, the first thing that probably comes to your mind are the comedy and tragedy masks. They are said to be originating from Ancient Greece, but for all we know, they could’ve originated from Dylan, the Double Faced Cubie. He is known for his split body, where one half is always smiling, outgoing and always up for a joke, while the other half is always frowning, timid and easily upset. In fact, these two sides are so different that they have their own nicknames as well; the smiling side is called Happy, while the frowning side is called Sad. "
+},
+{
+    "cubie-name": "Paigen",
+    "cubie-rarity": "Common",
+    "cubie-species": "Book Cart",
+    "cubie-img": "HcZs2",
+    "cubie-template": "Pok21",
+    "cubie-story-content": "True to her name, Paige the Book Cart Cubie is a lover of books and can usually be found in a library. As she usually stays up all night to read books, she is often found drowsing in a corner of a library somewhere, a book or two in hand. Her favorite genres are romance and fantasy, especially from the YA section. In winter, she enjoys reading heart-warming novels in front of a blazing fireplace with a warm cup of cocoa in hand. In fact, she has a cozy little wooden cabin in Lake Tahoe to go to during winter for this exact purpose."
+},
+{
+    "cubie-name": "Yvette",
+    "cubie-rarity": "Rare",
+    "cubie-species": "Yo-Yo",
+    "cubie-img": "Rt8Cd",
+    "cubie-template": "Po1Fd",
+    "cubie-story-content": "Famous for the amazing tricks she can perform, Yvette the Yo-Yo Cubie is a legend in the yo-yo community. Ever since she was a but a mere child, Yvette has trained to become the best Yo-Yo Cubie in the world. She was a part of the yo-yo team in middle school and high school and even went to college on a full-ride yo-yo scholarship. Although she suffered multiple injuries on her journey to become a professional yo-yo, she rose above all of them, becoming the youngest female to join the NYA, or the National Yo-Yo Association."
+},
+{
+    "cubie-name": "Cecilia",
+    "cubie-rarity": "Legendary",
+    "cubie-species": "Cake",
+    "cubie-img": "Liow4",
+    "cubie-template": "kKkjf",
+    "cubie-story-content": "Innocent and sweet, Cecilia the Cake Cubie is as pure as they come. She is the perfect stereotype of that one innocent friend everyone probably has, easily grossed out and never being mean. Her huge sweet tooth makes her a popular customer among sweet shops and someone to be feared on Halloween. Her parents actually own a pastry shop named after her, called Cecilia’s Cakes, a quite popular store among teens."
+},
+{
+    "cubie-name": "Kandi",
+    "cubie-rarity": "Common",
+    "cubie-species": "Candy",
+    "cubie-img": "Nvz82",
+    "cubie-template": "M1Asd",
+    "cubie-story-content": "Cecilia’s best friend yet her exact opposite, Kayden the Candy Cubie is a rebel through and through. When teachers announced that students must keep themselves clean, Kayden ceased showering, washing himself only every now and then. When the principal announced that they would be wearing uniforms starting next semester, Kayden conveniently “forgot”, wearing regular clothes. For these offenses and more, Kayden has gotten detention for more times than he can count, and has been suspended four times already."
+},
+{
+    "cubie-name": "Sven",
+    "cubie-rarity": "Common",
+    "cubie-species": "Sheep",
+    "cubie-img": "Gf7Xz",
+    "cubie-template": "Q81D5",
+    "cubie-story-content": "Though people describe him as calm and collected, never once losing his cool, Shawn the Sheep Cubie’s personality is actually closer to the fact that he ignores most things unless they are a huge interest to him. Though oblivious to many, many things, Shawn is never oblivious of grass, his favorite food as well as his favorite place to rest. He also never ignores his family and friends, his very top priorities. Other people, you ask? Well... Honestly, they are practically nonexistent to Shawn."
+},
+{
+    "cubie-name": "Penelope",
+    "cubie-rarity": "Common",
+    "cubie-species": "Plant Pot",
+    "cubie-img": "Wcxd8",
+    "cubie-template": "QZkj4",
+    "cubie-story-content": "A lover of the natural world, especially plants, Penelope the Plant Pot Cubie is a hater of climate change and global warming. She started the first ever club to go against climate change and even, in fact, was the one to convince scientists that climate change was real. Penelope has been to every country in the world, doing her best to stop or at least slow down climate change, speaking out against it. So try your best to respect the nature; for all you know, Penelope could be right there behind you, ready to punish you for your misdeeds."
+},
+{
+    "cubie-name": "Tanner",
+    "cubie-rarity": "Rare",
+    "cubie-species": "Tongue",
+    "cubie-img": "Abh92",
+    "cubie-template": "CCzs8",
+    "cubie-story-content": "The proud owner of the longest tongue in the world, Tanner the Tongue Cubie is a troublemaker through and through. He loves to play jokes with his tongue, tickling people and tripping them when they least expect it. Because of this, his friends have learned to never lower their guard, constantly on the lookout for the next attack. His favorite holiday is, obviously, April Fool’s Day. On this day, his jokes are at their best, or at their worst, depending on who you ask."
+},
+{
+    "cubie-name": "Tristan",
+    "cubie-rarity": "Rare",
+    "cubie-species": "Thunderstorm",
+    "cubie-img": "Iiyc3",
+    "cubie-template": "Ycxa9",
+    "cubie-story-content": "A moody teenager just going through puberty, Tristan the Thunderstorm Cubie is easily irritated and hard to calm down. He can usually be found inside his room and comes out only to eat and to go to school. He’s actually quite happy with the current coronavirus situation, as it means that he can stay in his room for longer than usual. If you want to know what he does I his room all day, sorry. We don’t know that either."
+},
+{
+    "cubie-name": "Cedric",
+    "cubie-rarity": "Common",
+    "cubie-species": "Cardboard Box",
+    "cubie-img": "Jwqix",
+    "cubie-template": "Llpos",
+    "cubie-story-content": "As a Cardboard Cubie, Cedric first came to this world as a box transporting toiletries. After that, he was used to deliver outgrown clothes, then to transport baby supplies, and so on and so forth. He traveled all over the world, visiting all seven continents and at least forty different countries. After a while, though, he grew tired of moving over and over, and became a storage box for books. Even now, he’s in a closet somewhere, enjoying his warm and cozy lifestyle. "
+},
+{
+    "cubie-name": "Lilith",
+    "cubie-rarity": "Common",
+    "cubie-species": "Lightbulb",
+    "cubie-img": "Vc82I",
+    "cubie-template": "Pp09q",
+    "cubie-story-content": "As a Cardboard Cubie, Cedric first came to this world as a box transporting toiletries. After that, he was used to deliver outgrown clothes, then to transport baby supplies, and so on and so forth. He traveled all over the world, visiting all seven continents and at least forty different countries. After a while, though, he grew tired of moving over and over, and became a storage box for books. Even now, he’s in a closet somewhere, enjoying his warm and cozy lifestyle. "
 }
+
+
 ];

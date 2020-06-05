@@ -6,6 +6,10 @@ var templateData = { // template file name , rarity 1 = legendary, 2 = epic, 3 =
     "Trinity": ["9kdm4",2], "Taylor" : ["Pbsw4", 3], "Kade" : ["9vfGh", 4],
     "Diana" : ["24Bvc",4], "Preston" : ["bn21K", 2], "Camillia" : ["4vcf3",3],
     "Philip" : ["O90ds",4], "Bryce" : ["K530s",4],"Flora" : ["9Zxal",2],
-    "Brett" : ["Pza23",3], "Alex" : ["Sw9Il",3], "Oishii" : ["Oqf86",2]
+    "Brett" : ["Pza23",3], "Alex" : ["Sw9Il",3], "Oishii" : ["Oqf86",2],
+    "Phoebe" : ["O00Xz",2], "Dylan" : ["Cx20O",2], "Paigen" : ["Pok21",4],
+    "Yvette" : ["Po1Fd",3], "Cecilia" : ["kKkjf",1], "Kandi" : ["M1Asd",4],
+    "Sven" : ["Q81D5",4], "Penelope" : ["QZkj4",4], "Tanner" : ["CCzs8",3],
+    "Tristan" : ["Ycxa9",3], "Alex" : ["Sw9Il",3], "Oishii" : ["Oqf86",2]
 };
 
