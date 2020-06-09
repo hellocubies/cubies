@@ -284,7 +284,7 @@ var data = [{
         "cubie-species": "Lightbulb",
         "cubie-img": "Vc82I",
         "cubie-template": "Pp09q",
-        "cubie-story-content": "As a Cardboard Cubie, Cedric first came to this world as a box transporting toiletries. After that, he was used to deliver outgrown clothes, then to transport baby supplies, and so on and so forth. He traveled all over the world, visiting all seven continents and at least forty different countries. After a while, though, he grew tired of moving over and over, and became a storage box for books. Even now, he’s in a closet somewhere, enjoying his warm and cozy lifestyle."
+        "cubie-story-content": "Not only is she the first ever Lightbulb Cubie, Lilith is also the first ever lightbulb period. She was created by Thomas Edison and has lived a very bright life, helping to shine light even in the darkest of places. By some miracle, her filament has yet to burn out, meaning her bulb hasn’t gone out yet. Lilith hopes to shine for a long, long time to come, as she enjoys helping people out."
     },
     {
         "cubie-name": "Clint",
