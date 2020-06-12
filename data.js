@@ -317,5 +317,38 @@ var data = [{
         "cubie-img": "Bv72L",
         "cubie-template": "lPoss",
         "cubie-story-content": "From the deep blue of the Pacific Ocean, Shane the Shark Cubie may look scary on first glance but is actually a big softie at heart.However, because of his scary face, many don’ t dare approach him, trying their best to avoid him.He is also quite shy and timid, never approaching anyone else first.As a result, Shane has very few friends - but is very close to those few."
+    },
+    {
+        "cubie-name": "Peyton",
+        "cubie-rarity": "Rare",
+        "cubie-species": "Pancake",
+        "cubie-img": "Klsn2",
+        "cubie-template": "Cvnz2",
+        "cubie-story-content": "The proud daughter of a huge pancake restaurant chain, Peyton the Pancake Cubie may just be the world’s most delicious pancake. Her outgoing attitude makes her pretty popular, and the fact that her family owns a pancake restaurant just adds to her popularity. Breaking the stereotype, though, Peyton isn’t bratty or rude, nor is she a teacher’s pet."
+    },
+    {
+        "cubie-name": "Piper",
+        "cubie-rarity": "Common",
+        "cubie-species": "Pineapple",
+        "cubie-img": "O92Pas",
+        "cubie-template": "Xapo6",
+        "cubie-story-content": "Just like the fruit, Piper the Pineapple Cubie is both sweet and sour. Her kind nature makes her popular among her friends, and she loves helping out those in need. Her soft and gentle ways help her to befriend animals quickly, making her a great candidate for her dream job, a vet. However, she is upset easily and not very forgiving; once she has a fight with someone, it takes them weeks to make up to her. She can also be quite cold to those she dislikes, ignoring them and making venomous remarks about them."
+    },
+    {
+        "cubie-name": "Colin",
+        "cubie-rarity": "Common",
+        "cubie-species": "Camera",
+        "cubie-img": "IrEr3",
+        "cubie-template": "Fg421",
+        "cubie-story-content": "An artistic and free soul, Colin the Camera Cubie loves to take pictures.He especially loves to take pictures of landscapes, such as mountains.His favorite landscape picture is one of a green mountain shining underneath a bright yellow sun.With his free spirit, Colin never settles down in one place, moving from country to country, continent to continent, every year or so.It’ s during these moves that Colin takes his pictures, and so far, his best ones came from Laos."
+    },
+    {
+        "cubie-name": "Eleanor",
+        "cubie-rarity": "Common",
+        "cubie-species": "Emoji",
+        "cubie-img": "ICw9P",
+        "cubie-template": "pOoss7",
+        "cubie-story-content": "Displaying a wide variety of faces and expressions, Eleanor the Emoji Cubie is very fickle.She goes through hundreds of emotions every day, from happiness to anger to sadness and to much, much more.Because she’ s so sensitive and emotional, Eleanor has a tendency to exaggerate things, and this has, on many occasions, led people to believe that she lies a lot.As a result, it’ s hard for her to make friends, but once she does, she tries her best to keep that friendship."
     }
+
 ];

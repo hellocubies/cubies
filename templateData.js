@@ -37,5 +37,9 @@ var templateData = { // template file name , rarity 1 = legendary, 2 = epic, 3 =
     "Lilith": ["Pp09q", 4],
     "Clint": ["e3Ghf", 4],
     "Michaela": ["Iuw65", 3],
-    "Helio": ["Poq09", 4]
+    "Helio": ["Poq09", 4],
+    "Peyton": ["Cvnz2", 3],
+    "Piper": ["Xapo6", 4],
+    "Colin": ["Fg421", 4],
+    " Eleanor": ["pOoss7", 4]
 };
