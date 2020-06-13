@@ -11,29 +11,31 @@ let myStorage = window.localStorage; //로컬 저장소 만들기
 // }
 
 
-//getCubie눌리면 실행하게 하기. 
-//Daily cubie 6시간에 한번씩 리셋되게 하기
+//Daily cubie 2시간에 한번씩 리셋되게 하기
 let targetDaily = document.querySelector('div.get-cubie');
-let nextEndtime = 0, //endTime
-    downloaded = 0,
-    tempImg = ['Qub87'],
-    tempName = ['TEST']; // 블랭크 이미지로 바꿔와야 함. 안쓰이지만 값 필요
-let timenow = Date.now();
+let nextEndtime, downloaded, tempImg, tempName, timenow;
+refreshStoredData(); //initial data load as opening site
 
-
-if (myStorage.getItem('nextEndtime') !== null) {
-    nextEndtime = myStorage.getItem('nextEndtime');
-}
-
-if (nextEndtime > timenow) { // endtime지났으면 초기화 상태로 유지
-    if (myStorage.getItem('downloaded') !== null) {
-        downloaded = myStorage.getItem('downloaded');
+function refreshStoredData() { // get cubie버튼 누르는 부분마다 data refresh  될 수 있도록 모듈화
+    nextEndtime = 0; //endTime
+    downloaded = 0;
+    tempImg = 'Qub87'; //김밥
+    tempName = 'TEST'; // 블랭크 이미지로 바꿔와야 함. 안쓰이지만 값 필요
+    timenow = Date.now();
+    if (myStorage.getItem('nextEndtime') !== null) {
+        nextEndtime = myStorage.getItem('nextEndtime');
     }
-    if (myStorage.getItem('tempImg') !== null) {
-        tempImg = myStorage.getItem('tempImg');
-    }
-    if (myStorage.getItem('tempName') !== null) {
-        tempName = myStorage.getItem('tempName');
+
+    if (nextEndtime > timenow) { // endtime지났으면 초기화 상태로 유지
+        if (myStorage.getItem('downloaded') !== null) {
+            downloaded = myStorage.getItem('downloaded');
+        }
+        if (myStorage.getItem('tempImg') !== null) {
+            tempImg = myStorage.getItem('tempImg');
+        }
+        if (myStorage.getItem('tempName') !== null) {
+            tempName = myStorage.getItem('tempName');
+        }
     }
 }
 
@@ -42,13 +44,12 @@ let btnInit = document.querySelector('.btn-init');
 btnInit.onclick = initStorage;
 
 function initStorage() {
-    // console.log('Storage daily, downloaded,tempImg will be removed')
-
+    console.log('Storage daily, downloaded,tempImg will be removed')
     localStorage.removeItem('nextEndtime');
     localStorage.removeItem('downloaded');
     localStorage.removeItem('tempImg');
-
 }
+// test용 초기화하기 끝
 
 //Checklist 만들기
 let targetList = document.querySelector('div.card-list');
@@ -59,7 +60,6 @@ function createList(cubie) {
     let temp = document.querySelector('#card-temp');
     let newCubie = document.importNode(temp.content, true);
     for (let key in cubie) {
-
         if (newCubie.querySelector('.' + key) !== null) {
             if (key === 'cubie-story-content') {
                 newCubie.querySelector('.' + key).textContent = cubie[key];
@@ -67,7 +67,6 @@ function createList(cubie) {
                 newCubie.querySelector('.' + key).textContent = key.slice(6, 7).toUpperCase() + key.slice(7) + " : " + cubie[key];
             }
         }
-
     }
     newCubie.querySelector('img.cubie-img').src = 'images/' + cubie['cubie-img'] + '.JPG';
     newCubie.querySelector('div.thumb-card').id = cubie['cubie-name'];
@@ -78,10 +77,10 @@ function createList(cubie) {
     newCubie.querySelector('.btn-story-toggle').classList.add(cubie['cubie-name']);
 
     targetList.insertBefore(newCubie, targetList.childNodes[0]);
-    //check ownership from local storage, check and show story toggle button
+    //check ownership from local storage, check and show story toggle button - 나중에 다운로드 받으면 ownership 체크되게 바꿀때 사용 가능
     let ownership = myStorage.getItem(cubie['cubie-name']);
     // console.log(ownership);
-    if (ownership === '1') {
+    if (Number(ownership) >= 1) {
         // console.log('Ownership is 1');
         let toggleBtn = document.querySelector('div.story-toggle.' + cubie['cubie-name']);
         // console.log(toggleBtn);
@@ -107,6 +106,27 @@ let btnClose = document.querySelector('.btn-close');
 btnClose.onclick = closeStory;
 
 function showChecklist() {
+    //refresh owership
+    cubies.forEach(refreshOwnership);
+
+    function refreshOwnership(cubie) {
+        let ownership = myStorage.getItem(cubie['cubie-name']);
+
+        if (Number(ownership) >= 1) {
+
+            let toggleBtn = document.querySelector('div.story-toggle.' + cubie['cubie-name']);
+
+            toggleBtn.style.display = 'block';
+            let checkOwn = document.querySelector('input.own-check.' + cubie['cubie-name']);
+            checkOwn.checked = true;
+        } else {
+            let toggleBtn = document.querySelector('div.story-toggle.' + cubie['cubie-name']);
+
+            toggleBtn.style.display = 'none';
+            let checkOwn = document.querySelector('input.own-check.' + cubie['cubie-name']);
+            checkOwn.checked = false;
+        }
+    }
     aboutUs.style.display = 'none';
     getCubie.style.display = 'none';
     checklist.style.display = 'block';
@@ -122,15 +142,16 @@ function showGetCubie() {
     aboutUs.style.display = 'none';
     getCubie.style.display = 'block';
     checklist.style.display = 'none';
-    timenow = Date.now();
+    refreshStoredData();
+    refreshDailyCubie();
+
     if (nextEndtime < timenow) {
-        // document.querySelector('.before-message').textContent = 'Your Cubie is waiting for you';
         document.querySelector('.before-get').style.display = 'block';
-        // console.log(document.querySelector('div.before-get'));
         document.querySelector('.after-get').style.display = 'none';
     } else {
+        document.querySelector('.before-get').style.display = 'none';
+        document.querySelector('.after-get').style.display = 'block';
         document.querySelector('.remaining-time').textContent = getTimeRemaining(nextEndtime);
-
     }
 
 }
@@ -214,19 +235,18 @@ function storyOpen() {
 }
 
 
-// console.log('nextEndtime', nextEndtime);
-// console.log('downloaded', downloaded);
-// console.log('tempImg', tempImg);
-
-
 //getcubie누른 후에는 template과 다운로드 버튼, 다운로드 한 후에는 다시 물음표와 몇시간 후에 니 튜비 나온다는걸로 변경
 createDailyCubie(Number(nextEndtime));
 // console.log('downloaded', downloaded)
 
 function createDailyCubie(endstamp) {
+    targetDaily = document.querySelector('div.get-cubie');
+    //lucky-btn, get-cubie btn click시 refresh
+    if (targetDaily.textContent !== '') {
+        targetDaily.textContent = '';
+    }
     let temp = document.querySelector('#daily-temp');
     let newDaily = document.importNode(temp.content, true);
-    // console.log('endtime, timenow', endstamp, timenow);
     if (endstamp < timenow) {
         // newDaily.querySelector('div.before-message').textContent = 'Your Cubie is waiting for you';
         newDaily.querySelector('div.before-get').style.display = 'block';
@@ -256,6 +276,22 @@ function createDailyCubie(endstamp) {
     targetDaily.appendChild(newDaily);
 }
 
+function refreshDailyCubie() {
+    document.querySelector('div.lucky-template').style.backgroundImage = 'url("images/' + tempImg + '.png")';
+    document.querySelector('h2.lucky-title').textContent = 'You got ' + tempName + '!';
+    if (downloaded === '1') {
+
+        document.querySelector('div.download-bar').style.display = 'none';
+        document.querySelector('div.after-message').textContent = 'Are you enjoying the time with your ' + tempName + '?';
+        document.querySelector('div.remaining-time').textContent = getTimeRemaining(nextEndtime);
+    } else if (downloaded === '0') {
+        document.querySelector('div.download-bar').style.display = 'block';
+
+        document.querySelector('div.after-message').textContent = 'Click download button and save the image';
+        document.querySelector('div.remaining-time').textContent = getTimeRemaining(nextEndtime);
+    }
+}
+
 function getTimeRemaining(endtime) {
     // console.log(Date.now());
     let t = endtime - Date.now();
@@ -271,66 +307,81 @@ function getTimeRemaining(endtime) {
 
 //Daily random cubie 뽑기, 다운로드 받기, 몇번 받았는지 몇시간 남았는지 시간 계산하기
 let getCubieBtn = document.querySelector('.btn-lucky');
-// console.log('Show my Lucky Cubie');
-// console.log(getCubieBtn);
 getCubieBtn.onclick = getRandomCubie;
 
 
 function getRandomCubie() {
-    let templates = window.templateData;
-    let randomCubies = [];
-    let rarityFreq = [1, 20, 35, 45]
-    for (let key in templates) {
-        for (let i = 0; i < rarityFreq[templates[key][1] - 1]; i++) {
-            randomCubies.push(key);
+    refreshStoredData();
+    console.log(tempName);
+    if (tempName === 'TEST') {
+
+        let templates = window.templateData;
+        let randomCubies = [];
+        let rarityFreq = [1, 10, 20, 30]
+
+        //ownership 자동으로 계산
+        // let ownership;
+
+        for (let key in templates) {
+            // ownership = myStorage.getItem(key);
+            // console.log('ownership', ownership);
+            for (let i = 0; i < rarityFreq[templates[key][1] - 1]; i++) {
+                randomCubies.push(key);
+                //한 템플릿이 3번이상 다운로드 되었으면 확률을 2로 낮춤
+                // if (i === 0 && ownership > 2) {
+                //     if (rarityFreq[templates[key][1] - 1] > 5) {
+                //         i += 7;
+                //     } else if (rarityFreq[templates[key][1] - 1] > 15) {
+                //         i += 17;
+                //     } else if (rarityFreq[templates[key][1] - 1] > 25) {
+                //         i += 27;
+                //     }
+                // }
+
+            }
         }
+
+        let randomCubie = randomCubies[Math.floor(Math.random() * randomCubies.length)];
+        let dailyChance = document.querySelector('div.daily-chance');
+        let afterGet = dailyChance.querySelector('div.after-get');
+        let beforeGet = dailyChance.querySelector('div.before-get');
+        afterGet.style.display = 'block';
+        beforeGet.style.display = 'none';
+        let cubieTemplate = dailyChance.querySelector('div.lucky-template');
+        let luckyTitle = dailyChance.querySelector('h2.lucky-title');
+        luckyTitle.textContent = 'You got ' + randomCubie + '!';
+
+
+        cubieTemplate.style.backgroundImage = 'url("images/' + templates[randomCubie][0] + '.png")';
+
+        myStorage.setItem('downloaded', 0);
+        myStorage.setItem('tempImg', templates[randomCubie][0]);
+        tempImg = templates[randomCubie][0];
+        myStorage.setItem('tempName', randomCubie);
+        tempName = randomCubie;
+        // console.log('chancenum', chanceNum);
+        //test time set-up  나중에 2시간으로 바뀌어야 함. 0.02시간
+        myStorage.setItem('nextEndtime', timenow + (2 * 1000 * 60 * 60));
+        nextEndtime = timenow + (2 * 1000 * 60 * 60);
+        // console.log('endtime calculate', daily[chanceNum]);
+        let remainingTime = dailyChance.querySelector('div.remaining-time');
+        // console.log('remainingTime',remainingTime);
+        remainingTime.textContent = getTimeRemaining(nextEndtime);
+        let afterMessage = dailyChance.querySelector('div.after-message');
+        // console.log('remainingTime',remainingTime);
+        afterMessage.textContent = 'Click download button below and save the image to your computer.';
+    } else {
+        showGetCubie();
     }
-    // console.log(randomCubies);
-    let randomCubie = randomCubies[Math.floor(Math.random() * randomCubies.length)];
-    // console.log(randomCubie);
 
-    let dailyChance = document.querySelector('div.daily-chance');
-    // console.log('dailyChance', dailyChance);
-    let afterGet = dailyChance.querySelector('div.after-get');
-    // console.log('after-get', afterGet);
-    let beforeGet = dailyChance.querySelector('div.before-get');
-    afterGet.style.display = 'block';
-    beforeGet.style.display = 'none';
-    let cubieTemplate = dailyChance.querySelector('div.lucky-template');
-    let luckyTitle = dailyChance.querySelector('h2.lucky-title');
-    luckyTitle.textContent = 'You got ' + randomCubie + '!';
-    // console.log('luckyTitle', luckyTitle);
-    // console.log(templates[randomCubie][0]);
 
-    cubieTemplate.style.backgroundImage = 'url("images/' + templates[randomCubie][0] + '.png")';
-
-    myStorage.setItem('downloaded', 0);
-    myStorage.setItem('tempImg', templates[randomCubie][0]);
-    tempImg = templates[randomCubie][0];
-    myStorage.setItem('tempName', randomCubie);
-    tempName = randomCubie;
-    // console.log('chancenum', chanceNum);
-    //test time set-up  나중에 6시간으로 바뀌어야 함. 0.02시간
-    myStorage.setItem('nextEndtime', timenow + (2 * 1000 * 60 * 60));
-    nextEndtime = timenow + (2 * 1000 * 60 * 60);
-    // console.log('endtime calculate', daily[chanceNum]);
-    let remainingTime = dailyChance.querySelector('div.remaining-time');
-    // console.log('remainingTime',remainingTime);
-    remainingTime.textContent = getTimeRemaining(nextEndtime);
-    let afterMessage = dailyChance.querySelector('div.after-message');
-    // console.log('remainingTime',remainingTime);
-    afterMessage.textContent = 'Click download button below and save the image to your computer.';
 }
 
 //Download Button download 받았다고 카운트 되고,  download버튼이 없어지고 Downloaded로 메세지 바뀜. 
 let downloadBtn = document.querySelector('.btn-download');
-
-
 downloadBtn.onclick = tempDown;
 
-
 function tempDown() {
-    
     // if (dnNum !== null) {
     //     dnNum++;
     // } else {
@@ -370,6 +421,7 @@ function closeHelp() {
 
 let timeRefresh = document.querySelector('div.time-refresh');
 timeRefresh.onclick = refreshTime;
+
 function refreshTime() {
     timenow = Date.now();
     if (nextEndtime < timenow) {
@@ -391,7 +443,7 @@ for (let i = 0; i < cubieImgs.length; i++) {
     cubieImgBigs[i].onclick = closeThis;
 }
 
-function imgPop(){
+function imgPop() {
     // console.log('this',this);
     let parentImg = this.parentNode;
     // console.log('parentImg',parentImg);
@@ -401,6 +453,6 @@ function imgPop(){
     cubieImgBig.style.display = 'block';
 }
 
-function closeThis(){
+function closeThis() {
     this.style.display = 'none';
 }
