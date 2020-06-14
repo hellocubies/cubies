@@ -378,8 +378,8 @@ var data = [{
         "cubie-name": "Matt",
         "cubie-rarity": "Epic",
         "cubie-species": "Meteor",
-        "cubie-img": "bCs75",
-        "cubie-template": "Xzm8Y",
+        "cubie-img": "Jh7Rk",
+        "cubie-template": "O82Pd",
         "cubie-story-content": "A couple thousand years old, Matt the Meteor Cubie came to Earth when he got driven off course by some comets and ended up crash landing here.Although he has made countless tries to get back to space, all his attempts have failed so far.But for a couple of decades now, Matt has been rethinking his decision to try to return home.He’ s actually really popular, and he doesn’ t want to lose all his friends when he goes back to outer space."
     }
 
