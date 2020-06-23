@@ -56,6 +56,7 @@ button {
 .header-desc {
   font-family: 'Righteous', cursive;
   font-size: 22px;
+  margin-bottom: 15px;
 }
 
 .social-icon {
@@ -186,21 +187,6 @@ button {
   margin: 5px;
 }
 
-/* .crew-img {
-  display: inline-block;
-  position: relative;
-  width: 110px;
-  height: 110px;
-  overflow: hidden;
-  border-radius: 50%;
-  vertical-align: top;
-}
-
-.crew-img img {
-  width: auto;
-  height: 100%;
-  margin-right: -5px;
-} */
 
 .crew-cubie {
   width: 100px;
@@ -219,6 +205,34 @@ button {
   position: relative;
   margin: auto;
   /* text-align : center; */
+}
+
+.season-section,
+.rarity-section {
+  display: inline-block;
+  font-family: 'Righteous', cursive;
+  font-size: 14pt;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.season,
+.rarity {
+  display: inline-block;
+  margin: auto;
+}
+
+.season-btn,
+.rarity-btn {
+  display: inline-block;
+  margin: auto;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #ffd5e5;
+  font-size: 18pt;
+  font-weight: 700;
+  color: white;
 }
 
 .get-cubie {
@@ -330,10 +344,11 @@ button {
   border-radius: 10px;
   color: #ffffdd;
   padding: 5px 10px;
-  margin: 15px;
+  margin: 15px auto;
   font-family: 'Righteous', cursive;
   font-size: 18px;
 }
+
 
 .time-refresh {
   padding: 5px;

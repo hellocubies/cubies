@@ -10,7 +10,6 @@ let myStorage = window.localStorage; //로컬 저장소 만들기
 //     myStorage.setItem('downloadToday', dnNum);
 // }
 
-
 //Daily cubie 2시간에 한번씩 리셋되게 하기
 let targetDaily = document.querySelector('div.get-cubie');
 let nextEndtime, downloaded, tempImg, tempName, timenow;
@@ -39,7 +38,7 @@ function refreshStoredData() { // get cubie버튼 누르는 부분마다 data re
     }
 }
 
-// test용 초기화하기
+// test용 초기화하기 - testcode
 let btnInit = document.querySelector('.btn-init');
 btnInit.onclick = initStorage;
 
@@ -50,16 +49,105 @@ function initStorage() {
     localStorage.removeItem('tempImg');
     // ownership초기화
     cubies.forEach(cubie => localStorage.removeItem(cubie['cubie-name']));
-    //test용..  Cassie ownership 4로 세팅하고 확률 보기
-    // localStorage.setItem('Cassie', 4);
-    // localStorage.setItem('Kimmy', 4);
 }
 // test용 초기화하기 끝
 
-//Checklist 만들기
+
+
+//menu bar
+let menuItems = document.querySelector('menu-item');
+let checklist = document.querySelector('div.checklist');
+let aboutUs = document.querySelector('div.about-us');
+let getCubie = document.querySelector('div.get-cubie');
+
+let btnChecklist = document.querySelector('.btn-checklist');
+btnChecklist.onclick = showChecklist;
+let btnAboutUs = document.querySelector('.btn-about-us');
+btnAboutUs.onclick = showAboutUs;
+let btnGetCubie = document.querySelector('.btn-get-cubie');
+btnGetCubie.onclick = showGetCubie;
+// let btnClose = document.querySelector('.btn-close');
+// btnClose.onclick = closeStory;
+
 let targetList = document.querySelector('div.card-list');
-cubies.forEach(createList);
-let prevStory;
+let seasonBtns = document.querySelectorAll('.season-btn');
+let rarityBtns = document.querySelectorAll('.rarity-btn');
+
+
+for (let i = 0; i < seasonBtns.length; i++) {
+    seasonBtns[i].onclick = showSeason;
+}
+for (let i = 0; i < rarityBtns.length; i++) {
+    rarityBtns[i].onclick = showRarity;
+}
+
+function showSeason() {
+    targetList.textContent = '';
+    seasonBtns.forEach(seasonBtn => {
+        seasonBtn.style.color = 'white';
+        seasonBtn.style.background = '#ffd5e5';
+    });
+    rarityBtns.forEach(rarityBtn => {
+        rarityBtn.style.color = 'white';
+        rarityBtn.style.background = '#ffd5e5';
+    });
+    // console.log(this);
+    this.style.color = '#303960';
+    this.style.background = '#81f5ff';
+    let seasonCubies = cubies.filter(cubie => cubie['cubie-season'] === this.classList[1]);
+    seasonCubies.forEach(createList);
+}
+
+function showRarity() {
+    targetList.textContent = '';
+    seasonBtns.forEach(seasonBtn => {
+        seasonBtn.style.color = 'white';
+        seasonBtn.style.background = '#ffd5e5';
+    });
+    rarityBtns.forEach(rarityBtn => {
+        rarityBtn.style.color = 'white';
+        rarityBtn.style.background = '#ffd5e5';
+    });
+    // console.log(this);
+    this.style.color = '#303960';
+    this.style.background = '#81f5ff';
+    let rarityCubies = cubies.filter(cubie => cubie['cubie-rarity'].toLowerCase() === this.classList[1]);
+    rarityCubies.forEach(createList);
+}
+
+function showChecklist() {
+    //Checklist 만들기 - show할때 만들기
+    // cubies.forEach(createList);
+    // let prevStory;
+    seasonBtns[0].onclick();
+
+    //refresh owership
+    // cubies.forEach(refreshOwnership);
+
+    // function refreshOwnership(cubie) {
+    //     let ownership = myStorage.getItem(cubie['cubie-name']);
+
+    //     if (Number(ownership) >= 1) {
+
+    //         let toggleBtn = document.querySelector('div.story-toggle.' + cubie['cubie-name']);
+
+    //         toggleBtn.style.display = 'block';
+    //         let checkOwn = document.querySelector('input.own-check.' + cubie['cubie-name']);
+    //         checkOwn.checked = true;
+    //     } else {
+    //         let toggleBtn = document.querySelector('div.story-toggle.' + cubie['cubie-name']);
+
+    //         toggleBtn.style.display = 'none';
+    //         let checkOwn = document.querySelector('input.own-check.' + cubie['cubie-name']);
+    //         checkOwn.checked = false;
+    //     }
+    // }
+    aboutUs.style.display = 'none';
+    getCubie.style.display = 'none';
+    checklist.style.display = 'block';
+}
+
+
 
 function createList(cubie) {
     let temp = document.querySelector('#card-temp');
@@ -93,48 +181,7 @@ function createList(cubie) {
         let checkOwn = document.querySelector('input.own-check.' + cubie['cubie-name']);
         checkOwn.checked = true;
     }
-}
-
-//menu bar
-let menuItems = document.querySelector('menu-item');
-let checklist = document.querySelector('div.checklist');
-let aboutUs = document.querySelector('div.about-us');
-let getCubie = document.querySelector('div.get-cubie');
-
-let btnChecklist = document.querySelector('.btn-checklist');
-btnChecklist.onclick = showChecklist;
-let btnAboutUs = document.querySelector('.btn-about-us');
-btnAboutUs.onclick = showAboutUs;
-let btnGetCubie = document.querySelector('.btn-get-cubie');
-btnGetCubie.onclick = showGetCubie;
-let btnClose = document.querySelector('.btn-close');
-btnClose.onclick = closeStory;
-
-function showChecklist() {
-    //refresh owership
-    cubies.forEach(refreshOwnership);
-
-    function refreshOwnership(cubie) {
-        let ownership = myStorage.getItem(cubie['cubie-name']);
-
-        if (Number(ownership) >= 1) {
-
-            let toggleBtn = document.querySelector('div.story-toggle.' + cubie['cubie-name']);
-
-            toggleBtn.style.display = 'block';
-            let checkOwn = document.querySelector('input.own-check.' + cubie['cubie-name']);
-            checkOwn.checked = true;
-        } else {
-            let toggleBtn = document.querySelector('div.story-toggle.' + cubie['cubie-name']);
-
-            toggleBtn.style.display = 'none';
-            let checkOwn = document.querySelector('input.own-check.' + cubie['cubie-name']);
-            checkOwn.checked = false;
-        }
-    }
-    aboutUs.style.display = 'none';
-    getCubie.style.display = 'none';
-    checklist.style.display = 'block';
+    refreshBtns();
 }
 
 function showAboutUs() {
@@ -152,6 +199,7 @@ function showGetCubie() {
 
     if (nextEndtime < timenow) {
         document.querySelector('.before-get').style.display = 'block';
+        document.querySelector('div.download-bar').style.display = 'block';
         document.querySelector('.after-get').style.display = 'none';
     } else {
         document.querySelector('.before-get').style.display = 'none';
@@ -161,84 +209,92 @@ function showGetCubie() {
 
 }
 
-//story 창 close 버튼 모든 cubie에 붙이기
-let closeBtn = document.getElementsByClassName('btn-close');
+function refreshBtns() {
+    //story 창 close 버튼 모든 cubie에 붙이기
+    let closeBtn = document.getElementsByClassName('btn-close');
 
-for (let i = 0; i < closeBtn.length; i++) {
-    closeBtn[i].onclick = closeStory;
-}
-
-function closeStory() {
-    let closingStory = document.querySelector('div.cubie-story.' + this.classList[1]);
-
-    closingStory.style.display = 'none';
-    let toggleBtn = document.querySelector('div.story-toggle.' + this.classList[1]);
-    toggleBtn.style.display = 'block';
-    prevStory = undefined;
-}
-//own checkbox check될때 story보여주면서 다른 story창 닫기,  uncheck될때 mystory button없애기
-let el = document.getElementsByTagName('input');
-
-for (let i = 0; i < el.length; i++) {
-    if (el[i].type === 'checkbox') {
-        el[i].onclick = showStory;
+    for (let i = 0; i < closeBtn.length; i++) {
+        closeBtn[i].onclick = closeStory;
     }
-}
 
-function showStory() {
-    let cubieName = this.classList[1];
-    if (this.checked === true) {
+    function closeStory() {
+        let closingStory = document.querySelector('div.cubie-story.' + this.classList[1]);
+        closingStory.style.display = 'none';
+        let toggleBtn = document.querySelector('.btn-story-toggle.' + this.classList[1]);
+        // toggleBtn.style.display = 'block';
+        toggleBtn.textContent = 'My Story';
+        // prevStory = undefined;
+    }
+    //uncheck될때 mystory button없애기
+    let el = document.getElementsByTagName('input');
 
-        let cubieStory = document.querySelector('div.cubie-story.' + cubieName);
-
-        if (prevStory !== undefined) {
-
-            prevStory.style.display = 'none';
-            let toggleBtn = document.querySelector('div.story-toggle.' + prevStory.classList[1]);
-            toggleBtn.style.display = 'block';
+    for (let i = 0; i < el.length; i++) {
+        if (el[i].type === 'checkbox') {
+            el[i].onclick = showToggle;
         }
-        cubieStory.style.display = 'block';
-        prevStory = cubieStory;
-        myStorage.setItem(cubieName, 1);
+    }
 
-    } else {
+    function showToggle() {
         let cubieName = this.classList[1];
+        if (this.checked === true) {
 
-        let cubieStory = document.querySelector('div.cubie-story.' + cubieName);
+            let cubieStory = document.querySelector('div.cubie-story.' + cubieName);
 
-        cubieStory.style.display = 'none';
-        let toggleBtn = document.querySelector('div.story-toggle.' + cubieName);
-        toggleBtn.style.display = 'none';
-        if (prevStory !== undefined) {
-            if (prevStory.classList[1] === cubieName) {
-                prevStory = undefined;
-            }
+            // if (prevStory !== undefined) {
+
+            //     prevStory.style.display = 'none';
+            //     let toggleBtn = document.querySelector('div.story-toggle.' + prevStory.classList[1]);
+            //     toggleBtn.style.display = 'block';
+            // }
+            let toggleBtn = document.querySelector('div.story-toggle.' + cubieName);
+            toggleBtn.style.display = 'block';
+            let myStoryBtn = document.querySelector('.btn-story-toggle.' + cubieName);
+            myStoryBtn.textContent = 'My Story';
+            // cubieStory.style.display = 'block';
+            // prevStory = cubieStory;
+            myStorage.setItem(cubieName, 1);
+
+        } else {
+            let cubieName = this.classList[1];
+            let cubieStory = document.querySelector('div.cubie-story.' + cubieName);
+            cubieStory.style.display = 'none';
+            let toggleBtn = document.querySelector('div.story-toggle.' + cubieName);
+            toggleBtn.style.display = 'none';
+            // if (prevStory !== undefined) {
+            //     if (prevStory.classList[1] === cubieName) {
+            //         prevStory = undefined;
+            //     }
+            // }
+            myStorage.removeItem(cubieName);
         }
-        myStorage.removeItem(cubieName);
     }
-}
 
-//my story button으로 스토리 다시열어보기
-let myStoryBtn = document.getElementsByClassName('btn-story-toggle');
+    //my story button으로 스토리 다시열어보기
+    let myStoryBtn = document.getElementsByClassName('btn-story-toggle');
 
-for (let i = 0; i < myStoryBtn.length; i++) {
-    myStoryBtn[i].onclick = storyOpen;
-}
-
-function storyOpen() {
-    let cubieName = this.classList[1];
-
-    let cubieStory = document.querySelector('div.cubie-story.' + cubieName);
-
-    if (prevStory !== undefined) {
-        prevStory.style.display = 'none';
-        let toggleBtn = document.querySelector('div.story-toggle.' + prevStory.classList[1]);
-        toggleBtn.style.display = 'block';
+    for (let i = 0; i < myStoryBtn.length; i++) {
+        myStoryBtn[i].onclick = storyOpen;
     }
-    cubieStory.style.display = 'block';
-    prevStory = cubieStory;
-}
 
+    function storyOpen() {
+        let cubieName = this.classList[1];
+        let cubieStory = document.querySelector('div.cubie-story.' + cubieName);
+        // if (prevStory !== undefined) {
+        //     prevStory.style.display = 'none';
+        //     let toggleBtn = document.querySelector('div.story-toggle.' + prevStory.classList[1]);
+        //     toggleBtn.style.display = 'block';
+        // }
+        if (cubieStory.style.display === 'block') {
+            this.textContent = "My Story"
+            cubieStory.style.display = 'none';
+        } else {
+            this.textContent = "Close Story";
+            cubieStory.style.display = 'block';
+        }
+        // prevStory = cubieStory;
+    }
+
+}
 
 //getcubie누른 후에는 template과 다운로드 버튼, 다운로드 한 후에는 다시 물음표와 몇시간 후에 니 튜비 나온다는걸로 변경
 createDailyCubie(Number(nextEndtime));
@@ -291,16 +347,13 @@ function refreshDailyCubie() {
 
     } else if (downloaded === '0') {
         document.querySelector('div.download-bar').style.display = 'block';
-
         document.querySelector('div.after-message').textContent = 'Click download button and save the image';
         document.querySelector('div.remaining-time').textContent = getTimeRemaining(nextEndtime);
     }
 }
 
 function getTimeRemaining(endtime) {
-
     let t = endtime - Date.now();
-
     let seconds = Math.floor((t / 1000) % 60);
     let minutes = Math.floor((t / 1000 / 60) % 60);
     let hours = Math.floor((t / (1000 * 60 * 60)) % 24);
@@ -354,14 +407,21 @@ function getRandomCubie() {
         cubieTemplate.style.backgroundImage = 'url("images/' + templates[randomCubie][0] + '.png")';
 
         myStorage.setItem('downloaded', 0);
+        downloaded = 0;
         myStorage.setItem('tempImg', templates[randomCubie][0]);
         tempImg = templates[randomCubie][0];
         myStorage.setItem('tempName', randomCubie);
         tempName = randomCubie;
         // console.log('chancenum', chanceNum);
-        //time set-up   2시간
+        //time set-up   
         myStorage.setItem('nextEndtime', timenow + (2 * 1000 * 60 * 60));
         nextEndtime = timenow + (2 * 1000 * 60 * 60);
+
+        //test time set-up    - testcode
+        // myStorage.setItem('nextEndtime', timenow + (1 * 1000 * 60));
+        // nextEndtime = timenow + (1 * 1000 * 60);
+        //testcode
+
         // console.log('endtime calculate', daily[chanceNum]);
         let remainingTime = dailyChance.querySelector('div.remaining-time');
         // console.log('remainingTime',remainingTime);
@@ -392,7 +452,7 @@ function tempDown() {
     //     this.style.display = 'none';
     //     myStorage.removeItem('downloadToday');
     // }
-    this.style.display = 'none';
+    this.parentNode.style.display = 'none';
     document.querySelector('div.after-message').textContent = 'Are you enjoying the time with your ' + tempName + '?';
 
     myStorage.setItem('downloaded', 1);

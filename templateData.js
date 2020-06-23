@@ -28,7 +28,7 @@ var templateData = { // template file name , rarity 1 = legendary, 2 = epic, 3 =
     "Paigen": ["Pok21", 4],
     "Yvette": ["Po1Fd", 3],
     "Cecilia": ["kKkjf", 1],
-    "Kandi": ["M1Asd", 4],
+    "Kayden": ["M1Asd", 4],
     "Sven": ["Q81D5", 4],
     "Penelope": ["QZkj4", 4],
     "Tanner": ["CCzs8", 3],
@@ -46,6 +46,9 @@ var templateData = { // template file name , rarity 1 = legendary, 2 = epic, 3 =
     "Shawn": ["qQp92", 4],
     "Erin": ["Xzm8Y", 4],
     "Scott": ["Fe63L", 3],
-    "Matt": ["O82Pd", 2]
-
+    "Matt": ["O82Pd", 2],
+    "Ella": ["KI8W2", 3],
+    "Paul": ["KO23P", 1],
+    "Oliver": ["Sl0I1", 4],
+    "Carson": ["VWp21", 4]
 };
