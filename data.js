@@ -465,6 +465,24 @@ var data = [{
         "cubie-template": "VWp21",
         "cubie-story-content": "Living in the middle of the Sahara Desert, Carson the Cactus Cubie sleeps in the morning and hangs out at night like a nocturnal creature.He gets water from wherever he can and stores them in his stem to keep it from evaporating.Since not many Cubies inhabit the Sahara, Carson best friends are heat - resistant creatures like scorpions and camels.As a result, Carson is socially awkward and has a hard time making friends.",
         "cubie-season": "season-3"
+    },
+    {
+        "cubie-name": "Bennett",
+        "cubie-rarity": "Rare",
+        "cubie-species": "Bee",
+        "cubie-img": "Ghe6D",
+        "cubie-template": "Uw8v9",
+        "cubie-story-content": "A lover of flowers, Bennett the Bee Cubie is calm and gentle, but also has a fiery spirit that can melt the coldest of hearts. Like all Bee Cubies, Bennett spends his days flitting from flower to flower to help pollinate them. His favorite flower changes every few months or so, and this month, his favorite is the Miltonia, a type of an orchid. Bennett is also rather passionate about the things he loves, and this eagerness makes him popular with his friends.",
+        "cubie-season": "season-3"
+    },
+    {
+        "cubie-name": "Payce",
+        "cubie-rarity": "Epic",
+        "cubie-species": "Piranha",
+        "cubie-img": "BcX0L",
+        "cubie-template": "lk10N",
+        "cubie-story-content": "The ruler of South America’s rivers, Payce the Piranha Cubie is known for his viciousness and cruelty, but also for his ability to stay calm and rational in any situation. Possibly the greatest leader in all of South America’s history, Payce is both feared and revered. The last of the three children born to the past king, Payce was never expected to become the king. However, his older brother, the one meant to be the king, was murdered the night before his crowning ceremony. And his sister, the middle child, was already seven months pregnant with a child and never educated in the monarch’s ways in the first place. So the duty of king fell to Payce who, defying all odds, became the great leader he is today.",
+        "cubie-season": "season-3"
     }
 
 ];
