@@ -483,6 +483,33 @@ var data = [{
         "cubie-template": "lk10N",
         "cubie-story-content": "The ruler of South America’s rivers, Payce the Piranha Cubie is known for his viciousness and cruelty, but also for his ability to stay calm and rational in any situation. Possibly the greatest leader in all of South America’s history, Payce is both feared and revered. The last of the three children born to the past king, Payce was never expected to become the king. However, his older brother, the one meant to be the king, was murdered the night before his crowning ceremony. And his sister, the middle child, was already seven months pregnant with a child and never educated in the monarch’s ways in the first place. So the duty of king fell to Payce who, defying all odds, became the great leader he is today.",
         "cubie-season": "season-3"
+    },
+    {
+        "cubie-name": "Pierce",
+        "cubie-rarity": "Common",
+        "cubie-species": "Present",
+        "cubie-img": "Tyww2",
+        "cubie-template": "lOoiP",
+        "cubie-story-content": "Only appearing during birthdays and holidays, Pierce the Present Cubie is a favorite among children. Nobody’s certain about where and when exactly he came into this world, but still, he has been loved ever since he made his first appearance. His goal in life is to make everyone in this world happy, which he has somewhat achieved so far through his gifts. In fact, he’s the one who made up the tale of Santa Claus in order to have a reason to give children gifts. Pierce takes joy in other’s happiness, and he plans on giving out presents until his very last breath.",
+        "cubie-season": "season-3"
+    },
+    {
+        "cubie-name": "Connor",
+        "cubie-rarity": "Common",
+        "cubie-species": "Coffee",
+        "cubie-img": "sSd6w",
+        "cubie-template": "Laq01",
+        "cubie-story-content": "The CEO of the big coffee chain Cafe Cubie, Connor the Coffee Cubie is the youngest self made billionaire in the world.Born into a poor family as the oldest of seven children, Conner started working at a young age to help provide for his family.At age thirteen, he got his first part - time job working at a fast food restaurant.At age sixteen, he picked up a second job as a cashier.And at age seventeen, he got a third job working as a teacher in a cram school.As a smart, well - rounded student, Connor was able to get into Yale on a full - ride scholarship and, after graduating, he set up the first Cafe Cubie in San Francisco.The response to the cafe was instant and explosive; in just four months, Connor was setting up Cafe Cubies all over the country, then all over the world as it went international.",
+        "cubie-season": "season-3"
+    },
+    {
+        "cubie-name": "Park",
+        "cubie-rarity": "Rare",
+        "cubie-species": "Panda",
+        "cubie-img": "Dd7Er",
+        "cubie-template": "iIuw7",
+        "cubie-story-content": "Native to central China, Park the Panda Cubie first came over to America as a gift from the Chinese people.At first, he lived in a zoo with his Panda Cubie friends, but soon, he got tired of the small space and decided to escape.The escape was rather easy;the zoo had a new zookeeper who always forgot to close the gate whenever he came into the cage, and Park escaped through that open gate during feeding time.Although the zookeepers attempted to catch him, they were no match for his speed, and he was able to get away safely.Ever since then, Park has been enjoying a life of freedom with other Panda Cubies in a big, secluded forest free from hunters.",
+        "cubie-season": "season-3"
     }
 
 ];
