@@ -116,10 +116,10 @@ function showRarity() {
 }
 
 function showChecklist() {
-    //Checklist 만들기 - show할때 만들기
+    //Checklist 만들기 - show할때 만들기 - 최근 시즌 먼저보여주기
     // cubies.forEach(createList);
     // let prevStory;
-    seasonBtns[0].onclick();
+    seasonBtns[2].onclick();
 
     //refresh owership
     // cubies.forEach(refreshOwnership);
