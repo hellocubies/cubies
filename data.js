@@ -510,6 +510,42 @@ var data = [{
         "cubie-template": "iIuw7",
         "cubie-story-content": "Native to central China, Park the Panda Cubie first came over to America as a gift from the Chinese people.At first, he lived in a zoo with his Panda Cubie friends, but soon, he got tired of the small space and decided to escape.The escape was rather easy;the zoo had a new zookeeper who always forgot to close the gate whenever he came into the cage, and Park escaped through that open gate during feeding time.Although the zookeepers attempted to catch him, they were no match for his speed, and he was able to get away safely.Ever since then, Park has been enjoying a life of freedom with other Panda Cubies in a big, secluded forest free from hunters.",
         "cubie-season": "season-3"
+    },
+    {
+        "cubie-name": "Leah",
+        "cubie-rarity": "Common",
+        "cubie-species": "Ladybug",
+        "cubie-img": "Jh763",
+        "cubie-template": "Vc73L",
+        "cubie-story-content": "Energetic and lively, Leah the Ladybug Cubie is for sure loved in the world of the Cubies, but she is also popular among humans, especially farmers, for obvious reasons. Like all Ladybug Cubies, Leah preys on plant-eating bugs, like aphids. In doing so, she’s able to protect crops, hence her popularity in the human world. Her ability to live in most habitats means she travels a lot as she feeds on bugs, and as a result, she has friends all over the world, from the Americas to Asia to Europe. Leah is naturally friendly, which is probably why she has a lot of friends even though she stays in one place for a few weeks at most.",
+        "cubie-season": "season-3"
+    },
+    {
+        "cubie-name": "James",
+        "cubie-rarity": "Common",
+        "cubie-species": "Jam Jar",
+        "cubie-img": "Bbe3p",
+        "cubie-template": "Old09",
+        "cubie-story-content": "Of the subspecies strawberry jam, James the Jam Jar Cubie spends his days coating toast and other types of bread. As the most common flavor of jam, James works harder than most, jumping from jar to knife to bread to over and over again. Other strawberry jams complain about this laborious task, but not James. Sweet and friendly, James is always happy to do his job, regardless of its long hours. His best friend is Peyton the Pancake Cubie becase, obviously, jam on pancakes are rather tasty.",
+        "cubie-season": "season-3"
+    },
+    {
+        "cubie-name": "Cassidy",
+        "cubie-rarity": "Rare",
+        "cubie-species": "Cow",
+        "cubie-img": "Ie5po",
+        "cubie-template": "Kjd7ew",
+        "cubie-story-content": "Rebellious since birth, Cassidy the Cow Cubie has never been the one to follow rules or to accept ideas she disagreed with. Though many believe that Cow Cubies are born into this world with only one purpose - to provide milk for humans - Cassidy won’t accept this fate without a fight. She believes that there’s a higher purpose to her life than just serving humans, and as an animal rights activist, she’s doing her best to prove this idea right, among other things. As of today, she’s also trying to end animal abuse, animal testing, and trophy hunting in both the Cubie world and the human world.",
+        "cubie-season": "season-3"
+    },
+    {
+        "cubie-name": "Frances",
+        "cubie-rarity": "Epic",
+        "cubie-species": "Fireplace",
+        "cubie-img": "Fie83",
+        "cubie-template": "Hwe82",
+        "cubie-story-content": "In the 1700’s, Fireplace Cubies, like Frances, had been the most important addition to houses. Tasked with keeping the house warm, they were treated like kings by humans, who feared the cold that might take over their house should the fire ever die out. But now, in the 21st century, Fireplace Cubies are no longer important, since there is no need to worry about keeping fires alive; after all, most houses these days are kept warm by heaters. Although it’s already been a couple of centuries since the first heater made its appearance, Frances still cannot forget the respect he was treated with, and hates how insignificant his life is today.",
+        "cubie-season": "season-3"
     }
 
 ];
