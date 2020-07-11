@@ -13,7 +13,7 @@ var data = [{
         "cubie-species": "Magma Whale",
         "cubie-img": "abd45DD",
         "cubie-template": "JK87sd",
-        "cubie-story-content": "Found only in the deepest of the oceans, Molton the Magma Whale Cubie can be seen near underwater volcanoes. Though he looks scary at first glance, he is actually quite friendly. He is very brave and courageous, and if you’re ever in a fight, he’s the one to call.",
+        "cubie-story-content": "Found only in the deepest of the oceans, Molton the Magma Whale Cubie can be seen near underwater volcanoes. Though he looks scary on first glance, he is actually quite friendly. He is very brave and courageous, and if you’re ever in a fight, he’s the one to call.",
         "cubie-season": "season-1"
     },
     {
@@ -40,7 +40,7 @@ var data = [{
         "cubie-species": "Dragon",
         "cubie-img": "asGHsd",
         "cubie-template": "sl39J",
-        "cubie-story-content": "Dragons are usually known for their scary attitude and their love of hoarding gold, but Bentley, the Dragon Cubie, is nothing like that.He loves all things cute, like rainbows and kittens, and will become your BFF in one hot second if you give him a present.",
+        "cubie-story-content": "Dragons are usually known for their scary attitude and their love of hoarding gold, but Bentley, the Dragon Cubie, is nothing like that. He loves all things cute, like rainbows and kittens, and will become your BFF if you give him a present.",
         "cubie-season": "season-1"
     },
     {
@@ -49,7 +49,7 @@ var data = [{
         "cubie-species": "Kimbap",
         "cubie-img": "Rtj375",
         "cubie-template": "98BBs",
-        "cubie-story-content": "Originating from South Korea, Kimmy the Kimbap Cubie is delicious sushi that came to life one day, just like the Gingerbread Man. However, unlike him, Kimmy survived and avoided being eaten. Her goal in life is to live comfortably and die at a ripe old age.",
+        "cubie-story-content": "Originating from South Korea, Kimmy the Kimbap Cubie is a delicious sushi that came to life one day, just like the Gingerbread Man. However, unlike him, Kimmy survived and avoided being eaten. Her goal in life is to live comfortably and die at a ripe old age.",
         "cubie-season": "season-1"
     },
     {
@@ -64,7 +64,7 @@ var data = [{
     {
         "cubie-name": "Ajax",
         "cubie-rarity": "Rare",
-        "cubie-species": "Red Monster",
+        "cubie-species": "Spiky-Haired Monster",
         "cubie-img": "bH7s6",
         "cubie-template": "skjg98",
         "cubie-story-content": "Although he is often mistaken as a devil, Ajax is actually just a spiky-haired monster. Very fierce and scary, he is known for his bad temper and his love for scary things. His favorite book genre is horror and he enjoys scary horror movies.",
@@ -121,7 +121,7 @@ var data = [{
         "cubie-species": "Tissue",
         "cubie-img": "Osi24",
         "cubie-template": "Pbsw4",
-        "cubie-story-content": "Like all Tissue Cubies, Taylor lives her life in service of others. As a compassionate and helpful Cubie, she is perfect for this role. If you’re ever feeling lonely or alone, come visit Taylor. She’ll hand you tissues as she listens to your sorrows. ",
+        "cubie-story-content": "Like all Tissue Cubies, Taylor lives her life in service of others. As a compassionate and helpful Cubie, she is perfect for this role. If you’re ever feeling lonely or alone, come visit Taylor. She’ll hand you tissues as she listens to your sorrows.",
         "cubie-season": "season-1"
     },
     {
@@ -148,7 +148,7 @@ var data = [{
         "cubie-species": "Ramen",
         "cubie-img": "Ivc31",
         "cubie-template": "Oqf86",
-        "cubie-story-content": "Originating from Japan, Oishii was the first ever Ramen Cubie. However, later in life, he immigrated over to places and helped their people make their own  ramen. He spread the word for ramen and is making it more popular each day.  Now traveling around the world, he is the one to find if you ever need help making a ramen.",
+        "cubie-story-content": "Originating from Japan, Oishii was the first ever Ramen Cubie. However, later in life, he immigrated over to places and helped their people make their own ramen. He spread the word for ramen and is making it more popular each day. Now traveling around the world, he is the one to find if you ever need help making a ramen.",
         "cubie-season": "season-1"
     },
     {
@@ -184,7 +184,7 @@ var data = [{
         "cubie-species": "Burger",
         "cubie-img": "jU1nM",
         "cubie-template": "K530s",
-        "cubie-story-content": "The first ever Burger Cubie, Bryce is known for his delicious taste and scent. Made from the most expensive ingredients, Bryce may just be the most exotic Burger Cubie to ever exist. After his birth in a fast food restaurant, Bryce visits different fast food restaurants, improving their ratings and taste",
+        "cubie-story-content": "The first ever Burger Cubie, Bryce is known for his delicious taste and scent. Made from the most expensive ingredients, Bryce may just be the most exotic Burger Cubie to ever exist. After his birth in a fast food restaurant, Bryce visits different fast food restaurants, improving their ratings and taste.",
         "cubie-season": "season-1"
     },
     {
@@ -233,7 +233,7 @@ var data = [{
         "cubie-season": "season-2"
     },
     {
-        "cubie-name": "Paigen",
+        "cubie-name": "Paige",
         "cubie-rarity": "Common",
         "cubie-species": "Book Cart",
         "cubie-img": "HcZs2",
@@ -292,7 +292,7 @@ var data = [{
         "cubie-species": "Tongue",
         "cubie-img": "Abh92",
         "cubie-template": "CCzs8",
-        "cubie-story-content": "The proud owner of the longest tongue in the world, Tanner the Tongue Cubie is a troublemaker through and through. He loves to play jokes with his tongue, tickling people and tripping them when they least expect it. Because of this, his friends have learned to never lower their guard, constantly on the lookout for the next attack. His favorite holiday is, obviously, April Fool’s Day. On this day, his jokes are at their best, or at their worst, depending on who you ask.",
+        "cubie-story-content": "The proud owner of the longest tongue in the world, Tanner the Tongue Cubie is a troublemaker through and through. He loves to play jokes with his tongue, tickling people and tripping them when they least expect it. Because of this, his friends have learned to never lower their uard, constantly on the lookout for the next attack. His favorite holiday is, obviously, April Fool’s Day. On this day, his jokes are at their best, or at their worst, depending on who you ask.",
         "cubie-season": "season-2"
     },
     {
@@ -337,7 +337,7 @@ var data = [{
         "cubie-species": "Milk Carton",
         "cubie-img": "aHc23",
         "cubie-template": "Iuw65",
-        "cubie-story-content": "A lover of all things organic, Michaela the Milk Carton Cubie is one of the healthiest,if a bit expensive, milk in the world.Ever since her birth from healthy, grass fed cows, Michaela has been working to make the world a more organic place, ridding farms free of pesticides and fertilizers.In fact, she even started small gardens in nearby schools in order to encourage them to go organic.",
+        "cubie-story-content": "A lover of all things organic, Michaela the Milk Carton Cubie is one of the healthiest, if a bit expensive, milk in the world. Ever since her birth from healthy, grass fed cows, Michaela has been working to make the world a more organic place, ridding farms free of pesticides and fertilizers. In fact, she even started small gardens in nearby schools in order to encourage them to go organic.",
         "cubie-season": "season-2"
     },
     {
@@ -346,16 +346,16 @@ var data = [{
         "cubie-species": "Helicopter",
         "cubie-img": "Hhho8",
         "cubie-template": "Poq09",
-        "cubie-story-content": "Belonging to a fire station in New York, Helio is, without a doubt, infinitely brave and courageous.With his life motto being“ First one in , last one out”, Helio does his best to rescue people from fires and other disasters.His life was in danger many times,for sure, but never received any life threatening injuries.However, his best friend Helene, also a firefighting helicopter, was killed in the line of duty when her engine was damaged beyond repair.",
+        "cubie-story-content": "Belonging to a fire station in New York, Helio is, without a doubt, infinitely brave and courageous. With his life motto being “First one in, last one out”, Helio does his best to rescue people from fires and other disasters. His life was in danger many times, for sure, but never received any life threatening injuries. However, his best friend Helene, also a firefighting helicopter, was killed in the line of duty when her engine was damaged beyond repair.",
         "cubie-season": "season-2"
     },
     {
         "cubie-name": "Shane",
-        "cubie-rarity": "Common",
+        "cubie-rarity": "Rare",
         "cubie-species": "Shark",
         "cubie-img": "Bv72L",
         "cubie-template": "lPoss",
-        "cubie-story-content": "From the deep blue of the Pacific Ocean, Shane the Shark Cubie may look scary on first glance but is actually a big softie at heart.However, because of his scary face, many don’ t dare approach him, trying their best to avoid him.He is also quite shy and timid, never approaching anyone else first.As a result, Shane has very few friends - but is very close to those few.",
+        "cubie-story-content": "From the deep blue of the Pacific Ocean, Shane the Shark Cubie may look scary on first glance but is actually a big softie at heart. However, because of his scary face, many don’t dare approach him, trying their best to avoid him. He is also quite shy and timid, never approaching anyone else first. As a result, Shane has very few friends - but is very close to those few.",
         "cubie-season": "season-2"
     },
     {
@@ -382,7 +382,7 @@ var data = [{
         "cubie-species": "Camera",
         "cubie-img": "IrEr3",
         "cubie-template": "Fg421",
-        "cubie-story-content": "An artistic and free soul, Colin the Camera Cubie loves to take pictures.He especially loves to take pictures of landscapes, such as mountains.His favorite landscape picture is one of a green mountain shining underneath a bright yellow sun.With his free spirit, Colin never settles down in one place, moving from country to country, continent to continent, every year or so.It’ s during these moves that Colin takes his pictures, and so far, his best ones came from Laos.",
+        "cubie-story-content": "An artistic and free soul, Colin the Camera Cubie loves to take pictures. He especially loves to take pictures of landscapes, such as mountains. His favorite landscape picture is one of a green mountain shining underneath a bright yellow sun. With his free spirit, Colin never settles down in one place, moving from country to country, continent to continent, every year or so. It’s during these moves that Colin takes his pictures, and so far, his best ones came from Laos.",
         "cubie-season": "season-2"
     },
     {
@@ -391,7 +391,7 @@ var data = [{
         "cubie-species": "Emoji",
         "cubie-img": "ICw9P",
         "cubie-template": "pOoss7",
-        "cubie-story-content": "Displaying a wide variety of faces and expressions, Eleanor the Emoji Cubie is very fickle.She goes through hundreds of emotions every day, from happiness to anger to sadness and to much, much more.Because she’ s so sensitive and emotional, Eleanor has a tendency to exaggerate things, and this has, on many occasions, led people to believe that she lies a lot.As a result, it’ s hard for her to make friends, but once she does, she tries her best to keep that friendship.",
+        "cubie-story-content": "Displaying a wide variety of faces and expressions, Eleanor the Emoji Cubie is very fickle. She goes through hundreds of emotions every day, from happiness to anger to sadness and to much, much more. Because she’s so sensitive and emotional, Eleanor has a tendency to exaggerate things, and this has, on many occasions, led people to believe that she lies a lot. As a result, it’s hard for her to make friends, but once she does, she tries her best to keep that friendship.",
         "cubie-season": "season-2"
     },
     {
@@ -400,7 +400,7 @@ var data = [{
         "cubie-species": "Soda",
         "cubie-img": "I8wnC",
         "cubie-template": "qQp92",
-        "cubie-story-content": "Just like you’ d expect from a Soda Cubie, Shawn has a bubbly personality to match the bubbly drink inside.Always eager and outgoing, Shawn makes friends easily and is pretty popular in school.Not only that, he’ s also a great student, smart and well - rounded.He’ s the poster child for the perfect golden boy, for sure, but that’ s only on the outside.Inside, he has many problems to deal with, just like your average teenager.The worst of these is his fear of heights, which is a problem when his friends want to ride a rollercoaster at an amusement park.",
+        "cubie-story-content": "Just like you’d expect from a Soda Cubie, Shawn has a bubbly personality to match the bubbly drink inside. Always eager and outgoing, Shawn makes friends easily and is pretty popular in school. Not only that, he’s also a great student, smart and well-rounded. He’s the poster child for the perfect golden boy, for sure, but that’s only on the outside. Inside, he has many problems to deal with, just like your average teenager. The worst of these is his fear of heights, which is a problem when his friends want to ride a rollercoaster at an amusement park.",
         "cubie-season": "season-2"
     },
     {
@@ -409,7 +409,7 @@ var data = [{
         "cubie-species": "Earth",
         "cubie-img": "bCs75",
         "cubie-template": "Xzm8Y",
-        "cubie-story-content": "As a model of the world we live in , Erin the Earth Cubie is big on love and peace.She loves all living things, both big and small, both animals and plants.If she sees an animal in need, or a withering plant, Erin does her best to help them out.She’ s also the most peaceful one out of all her friends;she plays peacemaker when they argue and helps them make up when they fight.",
+        "cubie-story-content": "As a model of the world we live in, Erin the Earth Cubie is big on love and peace. She loves all living things, both big and small, both animals and plants. If she sees an animal in need, or a withering plant, Erin does her best to help them out. She’s also the most peaceful one out of all her friends; she plays peacemaker when they argue and helps them make up when they fight.",
         "cubie-season": "season-2"
     },
     {
@@ -418,7 +418,7 @@ var data = [{
         "cubie-species": "Submarine",
         "cubie-img": "Hs7Tv",
         "cubie-template": "Fe63L",
-        "cubie-story-content": "A lover of the deep, dark blue, Scott the Submarine Cubie can usually be found exploring an ocean somewhere.He loves sea life, especially sea anemones, and took up photography to keep pictures of sea creatures he saw.As he has a rather cold demeanor, Scott does t have much friends, but he doesn’ t care, not really;as a quiet, reserved person, he prefers being by himself.As a result, Scott spends much of his time in the ocean rather than on land, since he doesn’ t have many friends to hang out with on land anyway.",
+        "cubie-story-content": "A lover of the deep, dark blue, Scott the Submarine Cubie can usually be found exploring an ocean somewhere. He loves sea life, especially sea anemones, and took up photography to keep pictures of sea creatures he saw. As he has a rather cold demeanor, Scott does t have much friends, but he doesn’t care, not really; as a quiet, reserved person, he prefers being by himself. As a result, Scott spends much of his time in the ocean rather than on land, since he doesn’t have many friends to hang out with on land anyway.",
         "cubie-season": "season-2"
     },
     {
@@ -427,7 +427,7 @@ var data = [{
         "cubie-species": "Meteor",
         "cubie-img": "Jh7Rk",
         "cubie-template": "O82Pd",
-        "cubie-story-content": "A couple thousand years old, Matt the Meteor Cubie came to Earth when he got driven off course by some comets and ended up crash landing here.Although he has made countless tries to get back to space, all his attempts have failed so far.But for a couple of decades now, Matt has been rethinking his decision to try to return home.He’ s actually really popular, and he doesn’ t want to lose all his friends when he goes back to outer space.",
+        "cubie-story-content": "A couple thousand years old, Matt the Meteor Cubie came to Earth when he got driven off course by some comets and ended up crash landing here. Although he has made countless tries to get back to space, all his attempts have failed so far. But for a couple of decades now, Matt has been rethinking his decision to try to return home. He’s actually really popular, and he doesn’t want to lose all his friends when he goes back to outer space.",
         "cubie-season": "season-2"
     },
     {
@@ -445,7 +445,7 @@ var data = [{
         "cubie-species": "Penguin",
         "cubie-img": "aAa98",
         "cubie-template": "KO23P",
-        "cubie-story-content": "A lover of the cold, Paul the Penguin Cubie lives in the middle of Antarctica, swimming and hunting all day.Like all Penguin Cubies, his coat of fur looks a bit like a suit, and to match that, he wears a small red bow tie.As an elegant and gentle Cubie, Paul is always formal, even to friends with only a few exceptions.His polite ways make him seem a bit cold at times, and as a result, many have trouble getting close to him.If you really want to befriend him, though, just get him a fish fresh out of the water.He’ ll open his heart and become your best friend.",
+        "cubie-story-content": "A lover of the cold, Paul the Penguin Cubie lives in the middle of Antarctica, swimming and hunting all day. Like all Penguin Cubies, his coat of fur looks a bit like a suit, and to match that, he wears a small red bow tie. As an elegant and gentle Cubie, Paul is always formal, even to friends with only a few exceptions. His polite ways make him seem a bit cold at times, and as a result, many have trouble getting close to him. If you really want to befriend him, though, just get him a fish fresh out of the water. He’ll open his heart and become your best friend.",
         "cubie-season": "season-3"
     },
     {
@@ -454,7 +454,7 @@ var data = [{
         "cubie-species": "Owl",
         "cubie-img": "Uc3Ks",
         "cubie-template": "Sl0I1",
-        "cubie-story-content": "Known for his high IQ, Oliver the Owl Cubie is the top in all of his classes.His favorite subject is biology and his least favorite is math.A high school senior, Oliver is aiming for the Ivy Leagues, with Stanford as his first choice.He hopes to go to med school after college to become a doctor - a family physician, to be exact.As a one - track - mind kind of a Cubie, Oliver has his whole future mapped out in front of him, down to the type of coffin he wants for his funeral.",
+        "cubie-story-content": "Known for his high IQ, Oliver the Owl Cubie is the top in all of his classes. His favorite subject is biology and his least favorite is math. A high school senior, Oliver is aiming for the Ivy Leagues, with Stanford as his first choice. He hopes to go to med school after college to become a doctor - a family physician, to be exact. As a one-track-mind kind of a Cubie, Oliver has his whole future mapped out in front of him, down to the type of coffin he wants for his funeral.",
         "cubie-season": "season-3"
     },
     {
@@ -463,7 +463,7 @@ var data = [{
         "cubie-species": "Cactus",
         "cubie-img": "WwS98",
         "cubie-template": "VWp21",
-        "cubie-story-content": "Living in the middle of the Sahara Desert, Carson the Cactus Cubie sleeps in the morning and hangs out at night like a nocturnal creature.He gets water from wherever he can and stores them in his stem to keep it from evaporating.Since not many Cubies inhabit the Sahara, Carson best friends are heat - resistant creatures like scorpions and camels.As a result, Carson is socially awkward and has a hard time making friends.",
+        "cubie-story-content": "Living in the middle of the Sahara Desert, Carson the Cactus Cubie sleeps in the morning and hangs out at night like a nocturnal creature. He gets water from wherever he can and stores them in his stem to keep it from evaporating. Since not many Cubies inhabit the Sahara, Carson best friends are heat-resistant creatures like scorpions and camels. As a result, Carson is socially awkward and has a hard time making friends.",
         "cubie-season": "season-3"
     },
     {
@@ -499,7 +499,7 @@ var data = [{
         "cubie-species": "Coffee",
         "cubie-img": "sSd6w",
         "cubie-template": "Laq01",
-        "cubie-story-content": "The CEO of the big coffee chain Cafe Cubie, Connor the Coffee Cubie is the youngest self made billionaire in the world.Born into a poor family as the oldest of seven children, Conner started working at a young age to help provide for his family.At age thirteen, he got his first part - time job working at a fast food restaurant.At age sixteen, he picked up a second job as a cashier.And at age seventeen, he got a third job working as a teacher in a cram school.As a smart, well - rounded student, Connor was able to get into Yale on a full - ride scholarship and, after graduating, he set up the first Cafe Cubie in San Francisco.The response to the cafe was instant and explosive; in just four months, Connor was setting up Cafe Cubies all over the country, then all over the world as it went international.",
+        "cubie-story-content": "The CEO of the big coffee chain Cafe Cubie, Connor the Coffee Cubie is the youngest self made billionaire in the world. Born into a poor family as the oldest of seven children, Conner started working at a young age to help provide for his family. At age thirteen, he got his first part-time job working at a fast food restaurant. At age sixteen, he picked up a second job as a cashier. And at age seventeen, he got a third job working as a teacher in a cram school. As a smart, well- rounded student, Connor was able to get into Yale on a full-ride scholarship and, after graduating, he set up the first Cafe Cubie in San Francisco. The response to the cafe was instant and explosive; in just four months, Connor was setting up Cafe Cubies all over the country, then all over the world as it went international.",
         "cubie-season": "season-3"
     },
     {
@@ -508,7 +508,7 @@ var data = [{
         "cubie-species": "Panda",
         "cubie-img": "Dd7Er",
         "cubie-template": "iIuw7",
-        "cubie-story-content": "Native to central China, Park the Panda Cubie first came over to America as a gift from the Chinese people.At first, he lived in a zoo with his Panda Cubie friends, but soon, he got tired of the small space and decided to escape.The escape was rather easy;the zoo had a new zookeeper who always forgot to close the gate whenever he came into the cage, and Park escaped through that open gate during feeding time.Although the zookeepers attempted to catch him, they were no match for his speed, and he was able to get away safely.Ever since then, Park has been enjoying a life of freedom with other Panda Cubies in a big, secluded forest free from hunters.",
+        "cubie-story-content": "Native to central China, Park the Panda Cubie first came over to America as a gift from the Chinese people. At first, he lived in a zoo with his Panda Cubie friends, but soon, he got tired of the small space and decided to escape. The escape was rather easy; the zoo had a new zookeeper who always forgot to close the gate whenever he came into the cage, and Park escaped through that open gate during feeding time. Although the zookeepers attempted to catch him, they were no match for his speed, and he was able to get away safely. Ever since then, Park has been enjoying a life of freedom with other Panda Cubies in a big, secluded forest free from hunters.",
         "cubie-season": "season-3"
     },
     {
@@ -546,6 +546,50 @@ var data = [{
         "cubie-template": "Hwe82",
         "cubie-story-content": "In the 1700’s, Fireplace Cubies, like Frances, had been the most important addition to houses. Tasked with keeping the house warm, they were treated like kings by humans, who feared the cold that might take over their house should the fire ever die out. But now, in the 21st century, Fireplace Cubies are no longer important, since there is no need to worry about keeping fires alive; after all, most houses these days are kept warm by heaters. Although it’s already been a couple of centuries since the first heater made its appearance, Frances still cannot forget the respect he was treated with, and hates how insignificant his life is today.",
         "cubie-season": "season-3"
+    },
+    {
+        "cubie-name": "Wesley",
+        "cubie-rarity": "Rare",
+        "cubie-species": "Werewolf",
+        "cubie-img": "aBcn8",
+        "cubie-template": "ueU7e",
+        "cubie-story-content": "Contrary to his tough exterior, Wesley the Werewolf Cubie is easily frightened and quick to surrender in a fight. At a young age, he was disowned by his own pack because of his cowardly nature; most, if not all, Werewolf Cubies are brave and eager to fight, and Wesley was considered a mutation for his difference in personality. Though it is rare for a Cubie abandoned at a young age to survive on its own and grow to adulthood, Wesley did just that, even if it was just so that he could avenge the hardships his young self had to endure through. Of course, growing older doesn’t mean you grow out of your personality, and Wesley never did become braver or stronger. As of today, he trains day and night, just waiting for a chance to get his revenge.",
+        "cubie-season": "season-3"
+    },
+    {
+        "cubie-name": "Chase",
+        "cubie-rarity": "Epic",
+        "cubie-species": "Crab",
+        "cubie-img": "Wwwo2",
+        "cubie-template": "Peq82",
+        "cubie-story-content": "Inhabiting the northern Pacific Ocean, Chase the Crab Cubie is a full grown red king crab, weighing twenty pounds with a leg span of six feet. As a result, he has been chased by hungry humans for as long as he can remember. Sadly, this also means that he has lost many friends over the years, some to disease or age, but most to crab fishermen.",
+        "cubie-season": "season-3"
+    },
+    {
+        "cubie-name": "Grant",
+        "cubie-rarity": "Common",
+        "cubie-species": "Ghost",
+        "cubie-img": "Bevc7",
+        "cubie-template": "Ooqpa",
+        "cubie-story-content": "Before he became a Ghost Cubie, Grant was the military leader of a now long-gone kingdom. Among other knightly duties, Grant was given the five most talented swordsmen in the nation to lead as the King's Guard, one of them being Kade. the Knight CubieLoyal to the king first and foremost, Grant died at 37 while protecting the king from an assassination attempt. However, instead of having his life ended there, Grant instead became a Ghost Cubie. He wandered the castle for centuries before he finally found a fellow Ghost Cubie in an old, abandoned library. This Ghost Cubie was way more knowledgeable than Grant, having lived ages longer, and she was able to give him the answer he was searching for. Apparently, Cubies became Ghost Cubies after death if they had a special attachment to something or someone in the land of the alive. For Grant, it was his desire to protect the king that made him a Ghost Cubie.",
+        "cubie-season": "season-3"
+    },
+    {
+        "cubie-name": "Oscar",
+        "cubie-rarity": "Common",
+        "cubie-species": "Orca",
+        "cubie-img": "Lsd8x",
+        "cubie-template": "zAsd9",
+        "cubie-story-content": "The largest of the oceanic dolphin family, Oscar the Orca Cubie can be found in the Atlantic Ocean. Orca Cubies have very diverse diets, and Oscar loves to feed on seals and sharks. As an apex predator, he is feared by all except for humans. The only non-Orca Cubie to not fear him is Molton the Magma Whale Cubie, who has been friends with Oscar since they were babies.",
+        "cubie-season": "season-3"
+    },
+    {
+        "cubie-name": "Mila",
+        "cubie-rarity": "Common",
+        "cubie-species": "Mouse",
+        "cubie-img": "Uq91V",
+        "cubie-template": "pqaaR",
+        "cubie-story-content": "As the youngest of seven pups, Mila the Mouse Cubie has been babied ever since she could remember. Her older brothers stop their horseplay whenever she comes near, and her older sisters fawn over her whenever they see her. They were less smothering when the second youngest, Mika, was still alive, but ever since she was caught in a rat trap and killed, her family has gotten paranoid to the extreme. Sometimes Mila hates how overprotective they are, but she deals with it; after all, they are her family.",
+        "cubie-season": "season-3"
     }
-
-];
+]

@@ -380,8 +380,8 @@ function getRandomCubie() {
         for (let key in templates) {
             ownership = myStorage.getItem(key);
             // console.log('ownership', key, ownership);
-            // 한 템플릿이 3 번이상 다운로드 되었으면 확률을 2 로 낮춤
-            if (ownership > 2) {
+            // 한 템플릿이 2 번이상 다운로드 되었으면 확률을 2 로 낮춤
+            if (ownership > 1) {
                 for (let i = 0; i < 3; i++) {
                     randomCubies.push(key);
                 }
