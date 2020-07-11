@@ -13,8 +13,12 @@ body.lang-ko {
 }
 
 .lang-ko {
-  font-family: 'Gaegu', cursive;
-  font-weight: 500;
+  /* font-family: 'Gaegu', cursive; */
+  /* font-family: 'Nanum Gothic', sans-serif; */
+  /* font-family: 'Gamja Flower', cursive; */
+  letter-spacing: 1px;
+  /* font-weight: 500; */
+  /* font-size: 120%; */
 }
 
 h1,
@@ -464,7 +468,6 @@ button {
 /* .story-title{
     text-align: center;
 }
-
 .temp-img{
     width : 300px;
 }
