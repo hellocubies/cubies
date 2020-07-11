@@ -8,6 +8,14 @@ body {
   font-size: 18px;
 }
 
+body.lang-ko {
+  font-size: 20px;
+}
+
+.lang-ko {
+  font-family: 'Gaegu', cursive;
+  font-weight: 500;
+}
 
 h1,
 h2,
@@ -58,6 +66,8 @@ button {
   font-size: 22px;
   margin-bottom: 15px;
 }
+
+
 
 .social-icon {
   font-size: 22px;
