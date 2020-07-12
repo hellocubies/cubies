@@ -1,4 +1,6 @@
-let cubies = window.data; //checklist data  가져오기
+// let cubies = window.data; //checklist data  가져오기
+let cubies = window.alpha; //checklist data  가져오기
+cubies.forEach(addThings); //merge data
 let myStorage = window.localStorage; //로컬 저장소 만들기
 
 //download number check하기. 처음이면 0
@@ -41,6 +43,9 @@ function refreshStoredData() { // get cubie버튼 누르는 부분마다 data re
 // test용 초기화하기 - testcode
 let btnInit = document.querySelector('.btn-init');
 btnInit.onclick = initStorage;
+
+
+
 
 function initStorage() {
     console.log('Storage daily, downloaded,tempImg will be removed')
@@ -120,7 +125,6 @@ function showChecklist() {
     // cubies.forEach(createList);
     // let prevStory;
     seasonBtns[2].onclick();
-
     //refresh owership
     // cubies.forEach(refreshOwnership);
 
@@ -148,7 +152,6 @@ function showChecklist() {
 }
 
 
-
 function createList(cubie) {
     let temp = document.querySelector('#card-temp');
     let newCubie = document.importNode(temp.content, true);
@@ -162,6 +165,9 @@ function createList(cubie) {
         }
     }
     newCubie.querySelector('img.cubie-img').src = 'images/' + cubie['cubie-img'] + '.JPG';
+    newCubie.querySelector('img.cubie-img').onclick = imgPop;
+    newCubie.querySelector('img.cubie-img-big').src = 'images/' + cubie['cubie-img'] + '.JPG';
+    newCubie.querySelector('img.cubie-img-big').onclick = closeThis;
     newCubie.querySelector('div.thumb-card').id = cubie['cubie-name'];
     newCubie.querySelector('input').classList.add(cubie['cubie-name']);
     newCubie.querySelector('div.cubie-story').classList.add(cubie['cubie-name']);
@@ -182,6 +188,15 @@ function createList(cubie) {
         checkOwn.checked = true;
     }
     refreshBtns();
+}
+
+function addThings(obj) {
+    let cubieBeta = window.beta.filter(b => b['name'] === obj['cubie-name'])[0];
+    obj['cubie-species'] = cubieBeta['species'];
+    obj['cubie-story-content'] = cubieBeta['story'];
+    obj['cubie-name'] = window.atob(obj['cubie-name']);
+    obj['cubie-rarity'] = window.atob(obj['cubie-rarity']);
+    obj['cubie-img'] = window.atob(obj['cubie-img']);
 }
 
 function showAboutUs() {
@@ -372,7 +387,19 @@ function getRandomCubie() {
     // console.log(tempName);
     if (tempName === 'TEST') {
 
-        let templates = window.templateData;
+        // let templates = window.templateData;
+        let preTemplates = window.gamma;
+        let templates = {};
+        for (let key in preTemplates) {
+
+            // window.atob(cubieObj['cubie-name'])
+            let cName = window.atob(key);
+            templates[cName] = [];
+            templates[cName][0] = window.atob(preTemplates[key][0]);
+            templates[cName][1] = preTemplates[key][1];
+        }
+
+
         let randomCubies = [];
         let rarityFreq = [1, 10, 20, 30]
 
@@ -504,13 +531,13 @@ function refreshTime() {
     }
 }
 
-let cubieImgs = document.getElementsByClassName('cubie-img');
-let cubieImgBigs = document.getElementsByClassName('cubie-img-big');
+// let cubieImgs = document.getElementsByClassName('cubie-img');
+// let cubieImgBigs = document.getElementsByClassName('cubie-img-big');
 
-for (let i = 0; i < cubieImgs.length; i++) {
-    cubieImgs[i].onclick = imgPop;
-    cubieImgBigs[i].onclick = closeThis;
-}
+// for (let i = 0; i < cubieImgs.length; i++) {
+//     cubieImgs[i].onclick = imgPop;
+//     cubieImgBigs[i].onclick = closeThis;
+// }
 
 function imgPop() {
 
